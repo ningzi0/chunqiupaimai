@@ -1,0 +1,56 @@
+<!--pages/deposit/deposit.wxml-->
+<view class="deposit">
+    <view class="depositCon">
+        <block wx:for="{{depositArray}}">
+            <view class="item">
+                <image src="{{item.imgrSc}}" mode="aspectFill"></image>
+                <view class="depositext">
+                    <view class="depositit">{{item.depositit}}</view>
+                    <view class="depositags">
+                        <text>交保时间：{{item.depositagsTime}}</text>
+                        <text>交保金额：￥{{item.depositagsMoney}}元</text>
+                        <text class="tags">已缴纳</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

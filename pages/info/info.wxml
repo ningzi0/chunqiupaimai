@@ -1,0 +1,70 @@
+<!--pages/info/info.wxml-->
+<view class="info">
+    <view class="infoCon">
+        <view class="item">
+            <view class="text">头像</view>
+            <view class="text">
+                <image src="/images/header.jpg" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="item">
+            <view class="text">昵称</view>
+            <view class="text">蜡笔小新</view>
+        </view>
+        <view class="item">
+            <view class="text">竞拍编号</view>
+            <view class="text">N150</view>
+        </view>
+    </view>
+
+    <view class="infoCon">
+        <view class="item">
+            <view class="text">手机号码</view>
+            <view class="text">15178503556</view>
+        </view>
+        <view class="item">
+            <view class="text">性别</view>
+            <view class="text">男</view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

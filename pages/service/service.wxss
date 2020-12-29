@@ -1,0 +1,62 @@
+/* pages/service/service.wxss */
+.service{
+  background-color: #fff;
+  margin: 2%;
+  padding: 2%;
+}
+.serviceTit{
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #d90f09;
+  border-bottom: 1px solid #eee;
+  padding: 0.5em 0;
+}
+.service .li{
+  margin: 0.5em 0;
+}
+.service .li .p{
+  font-size: 0.9em;
+  color: #949494;
+  padding: 0.5em 0;
+}
+.service .footer{
+  text-align: center;
+  background-color: #d90f09;
+  color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+}
+.service .footer .text{
+  padding: 0.5em 0;
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

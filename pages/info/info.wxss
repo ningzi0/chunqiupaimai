@@ -1,0 +1,38 @@
+/* pages/info/info.wxss */
+.infoCon{
+  background-color: #fff;
+  margin-bottom: 0.5em;
+}
+.infoCon .item image{
+  width: 4em;
+  height: 4em;
+  border-radius: 0.25em;
+}
+.infoCon .item{
+  display: flex;
+  align-items:center;
+  border-bottom: 1px solid #eee;
+  padding: 1em 0.75em;
+  margin: 0 0.75em;
+}
+.infoCon .item .text{
+  flex: 1;
+  font-size: 0.9em;
+}
+.infoCon .item .text:last-child{
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,522 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  padding: 0 2%;
+  box-sizing: border-box;
+  font-weight: 200;
+} 
+::-webkit-scrollbar {
+ 
+  width: 0;
+   
+  height: 0;
+   
+  color: transparent;
+}
+/*清楚浮动*/
+.clearfix:after {
+  clear: both;
+  height: 0;
+  content: "";
+  line-height: 0;
+  font-size: 0;
+  display: block;
+}
+
+
+
+.tab-content{
+  min-height: 15em;
+}
+.tab-content .ul .li{
+  width: 49%;
+  display: inline-block;
+  margin:0 2% 2% 0;
+}
+.tab-content .ul .li:nth-child(2n){
+  margin-right: 0;
+}
+.tab-content .ul .li image{
+  width: 100%;
+  height: 8em;
+  display: block;
+}
+.t_ctit{
+  font-size: 0.85em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.35em;
+  background: #ededed;
+}
+.tabinfo{
+  padding: 0.35em;
+}
+.tabCon{
+  background: #fff;
+}
+.tabinfoItemTit{
+  font-size: 0.85em;
+  display: inline-block;
+  width: 3em;
+}
+.tabinfoItem{
+  margin: 0.2em 0;
+  color: #a1a7ab;
+  letter-spacing: -0.1em;
+}
+.tabinfoPrice{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 0.35em;
+  color: #d90f09;
+}
+.tabinfo_price{
+  margin-left: 0.35em;
+  font-size: 0.85em;
+}
+.tabinfoBtn{
+  font-size: 0.85em;
+  background: #d90f09;
+  border-radius: 3em 0 0 3em;
+  color: #fff;
+  width:50%;
+  text-align: center;
+  float: right;
+}
+.tabinfoBottom{
+  display: flex;
+  margin-top: 0.5em;
+  border-top: 1px solid #eaebef;
+}
+.tabinfoBottom .tabinfoB_item{
+  flex: 1;
+  font-size:0.8em;
+  padding: 1em 0.5em;
+  color: #b3b5b6;
+  border-right: 1px solid #eaebef;
+}
+.tabinfoBottom .tabinfoB_item:last-child{
+  border-right: 0;
+}
+.tabinfoBottom .tabinfoB_item .b{
+  color: #555c5e;
+}
+
+
+
+/* table切换样式 */
+.smallTitle{
+  margin: 0.35em 0;
+}
+.smallTitle view.titleItem{
+  font-size: 1em;
+  color: #626262;
+  border: 1px solid #c4c4c4;
+  border-radius: .35em;
+  padding: 0.2em 0;
+}
+.smallTitle view.border-tottom{
+  border: 1px solid #d90f09;
+  color: #fff;
+}
+.tab-content {
+  min-height: 15em;
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+
+/* pages/simulation2/simulation2.wxss */
+page{
+  background-color: #f0f0f0;
+}
+.banner swiper{
+  height: 20em;
+  background: #fff;
+  padding: 0.35em;
+}
+.banner image{
+  width: 100%;
+  height: 100%;
+}
+.simulationTitle{
+  background-color: #fff;
+  margin: 0.35em 0;
+}
+
+.simulationTitle .title{
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #2b2b2b;
+  border-bottom: 1px solid #eee;
+  padding:2%;
+}
+.price{
+  padding: 1em 2%;
+}
+.price .currentTit{
+  font-size: 0.9em;
+  color: #2b2b2b;
+}
+.currentPrice{
+  font-size:1.2em ;
+  color: #d90f09;
+}
+.currentSmall{
+  color: #d90f09;
+  font-size: 0.8em;
+}
+.current{
+  float: left;
+}
+.number{
+  font-size: 0.9em;
+  color: #2b2b2b;
+  float: right;
+}
+.banner_tag{
+  display: flex;
+  background-color: #fff;
+  padding:0 0.35em 0.35em;
+}
+.banner_tag .b_tagItem{
+  padding: 0.75em 0;
+  font-size: 0.85em;
+  text-align: center;
+}
+.banner_tag .flex1{
+  flex:1 ;
+  background-color: #d90f09;
+  color: #fff;
+}
+.banner_tag .flex2{
+  flex:2 ;
+  background-color: #efefef;
+  padding: 0.75em;
+}
+/* 收藏按钮样式 */
+.detail-shoucang{
+  float: right;
+  padding: 5rpx 15rpx;
+}
+ 
+.detail-shoucang.text{
+ color: #fff;
+  font-size: 28rpx;
+  line-height: 51rpx;
+}
+.tips{
+  font-size: 0.85em;
+  padding: 0 0 1em;
+  color: #b6b6b6;
+}
+.tips text{
+  display: inline-block;
+  margin:0 0.55em;
+}
+
+.nav_btn{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 1em rgba(0,0,0,0.1);
+  padding: 0.35em;
+  box-sizing: border-box;
+}
+.nav_btn .btn{
+  padding: 0.75em 0;
+  background-color: #d90f09;
+  color: #fff;
+}
+
+
+/* 内页搜索 */
+.search{
+  background-color: #fff;
+  padding: 0.5em;
+  position: relative;
+}
+.search input{
+  border: 1px solid rgb(239, 242, 245);
+  padding: 0.5em 0.5em 0.5em 2.5em;
+  background-color: rgb(239, 242, 245);
+  font-size: 0.9em;
+}
+.search image{
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translate(0,-50%);
+}
+
+
+/*===================================*/
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+ 
+.tabTit{
+  height:90rpx;
+  line-height: 90rpx;
+  border-bottom: solid 1px #eee;
+  top:0;
+  width: 750rpx;
+  z-index: 1;
+  background: #fff;
+  font-size:15px;
+  text-align: center;
+}
+ 
+ 
+ 
+.tabTit .active{
+  color:#e64340;
+  background: #fff;
+}
+ 
+.tabTit .active image{
+  transform: rotate(180deg);
+  background: none;
+}
+ 
+.tabTit image{
+  width:26rpx;
+  height:26rpx;
+  vertical-align: middle;
+  margin-left: 5px;
+ 
+}
+ 
+.tabLayer{
+  box-shadow: 0 5px 5px rgba(0,0,0,.15);
+  width:750rpx;
+  overflow: hidden;
+  position: fixed;
+  top:290rpx;
+  z-index: 1;
+  background: #fff;
+  padding-bottom: 40rpx;
+  border-bottom: solid 1px #eee;
+  text-align: center;
+}
+.tabLayer text{
+  width:210rpx;
+  height:60rpx;
+  line-height:60rpx;
+  float:left;
+  border: solid 1px #eee;
+  margin:20rpx 0 0 26rpx;
+  font-size:15px;
+}
+.tabLayer .active{
+  color:#e64340;
+  border-color:#e64340;
+  }
+ 
+.flex1 {
+    flex: 1;
+    overflow: hidden;
+    display: block;
+}
+ 
+/*弹性盒模型*/
+.box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+
+/**=====================内页资产-资产列表页========================**/
+.assetsItem .pic{
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #d90f09;
+  padding: 0.5em;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.assetsItem image{
+  width: 100%;
+  height: 100%;
+}
+.assetsItem text{
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  margin: 0.5em 0;
+  color: #737373;
+}
+.assetsItem{
+  display: inline-block;
+  width: 20%;
+  margin: 0 0 0.75em;
+}
+.assetsList{
+  background-color: #fff;
+  padding: 0.5em;
+}
+.advertisement image{
+  width: 100%;
+  height: 4.5em;
+  display: block;
+}
+
+.assetsContent ul li navigator{
+  background-color: #fff;
+  margin: 0.35em;
+  padding: 0.35em;
+}
+.assetsContent ul li .pic{
+  width: 10em;
+  height: 10em;
+  float: left;
+}
+.assetsContent ul li .assetsCon{
+  float: left;
+  width: 49%;
+  padding: 0.35em;
+}
+.assetsContent ul li .pic image{
+  width: 100%;
+  height: 100%;
+}
+.assetsContent ul li .assetsCon .assetTit{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.assetsContent ul li .assetsCon .p{
+  font-size: 0.85em;
+  color: #a9a9a9;
+}
+.assetsContent ul li .assetsCon .p text{
+  margin-right: 0.5em;
+}
+.assetsContent ul li .assetsCon .price{
+  font-size: 0.85em;
+  color: #d90f09;
+  padding-bottom: 0;
+}
+.assetsContent ul li .assetsCon .price .big{
+  font-size: 1.9em;
+  font-weight: bold;
+  letter-spacing: -0.1em;
+}
+.assetsContent ul li .assetsCon .tags{
+  font-size: 0.85em;
+  color: #fff;
+  padding: 0.35em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+.assetsContent ul li .assetsCon .tags1{
+  background-color: #d90f09;
+}
+.assetsContent ul li .assetsCon .tags2{
+  background-color: #0e8d1a;
+}
+.assetsContent ul li .assetsCon .tags3{
+  background-color: #f4a703;
+}
+.assetsContent ul li .assetsCon .tags4{
+  background-color: #c0c0c0;
+}
+
+
+/*固定定位*/
+.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+/**/
+.orderCon ul li navigator{
+  background: #fff;
+  padding: 0.5em;
+  margin: 0.35em 0.35em 0;
+}
+.orderCon ul li image{
+  width:7em;
+  height: 7em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.orderContent{
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+.orderContent .orderTitle{
+  font-size: 0.9em;
+  max-height: 2.7em;
+  overflow: hidden;
+}
+.orderContent .p{
+  font-size: 0.8em;
+  color: #999;
+}
+.orderContent .p text{
+  display: block;
+  margin: 0.25em 0;
+}
+.orderContent .tags{
+  font-size: 0.8em;
+  color: #d90f09;
+  margin: 0.35em 0;
+}
+.orderCon ul li .btn{
+  background: #fff;
+  text-align: center;
+  margin: 0 0.35em;
+}
+.orderCon ul li .btn button{
+  font-size: 0.9em;
+  width: auto;
+  font-weight: 400;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

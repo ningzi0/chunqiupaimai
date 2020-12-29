@@ -1,0 +1,143 @@
+<view class="tab-title smallTitle">
+	<view class="{{selected1?'border-tottom':'default'}} titleItem" bindtap="selected1">待交保</view>
+	<view class="{{selected2?'border-tottom':'default'}} titleItem" bindtap="selected2">待开拍</view>
+	<view class="{{selected3?'border-tottom':'default'}} titleItem" bindtap="selected3">竞价中</view>
+  <view class="{{selected4?'border-tottom':'default'}} titleItem" bindtap="selected4">已结束</view> 
+  <view class="{{selected5?'border-tottom':'default'}} titleItem" bindtap="selected5">已拍下</view> 
+</view>
+	
+<view class="tab-content">
+  <view class="{{selected1?'show':'hidden'}}">
+      <view class="orderCon">
+          <ul>
+              <block wx:for="{{orderArray}}">
+                  <li>
+                      <navigator>
+                          <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                          <view class="orderContent">
+                              <view class="tags">{{item.tags}}</view>
+                              <view class="orderTitle">{{item.orderTitle}}</view>
+                              <view class="p">
+                                  <text>{{item.ordertext}}</text>
+                                  <text>{{item.ordertext2}}</text>
+                              </view>
+                          </view>
+                      </navigator>
+                      <view class="btn">
+                          <button>{{item.btn}}</button>
+                      </view>
+                  </li>
+              </block>
+          </ul>
+      </view>
+  </view>
+  <view class="{{selected2?'show':'hidden'}}">
+    <view class="orderCon">
+          <ul>
+              <block wx:for="{{orderArray2}}">
+                  <li>
+                      <navigator>
+                          <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                          <view class="orderContent">
+                              <view class="tags">{{item.tags}}</view>
+                              <view class="orderTitle">{{item.orderTitle}}</view>
+                              <view class="p">
+                                  <text>{{item.ordertext}}</text>
+                                  <text>{{item.ordertext2}}</text>
+                              </view>
+                          </view>
+                      </navigator>
+                      <view class="btn">
+                          <button>{{item.btn}}</button>
+                      </view>
+                  </li>
+              </block>
+          </ul>
+      </view>
+  </view>
+  <view class="{{selected3?'show':'hidden'}}">
+    <view class="orderCon">
+          <ul>
+              <block wx:for="{{orderArray3}}">
+                  <li>
+                      <navigator>
+                          <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                          <view class="orderContent">
+                              <view class="tags">{{item.tags}}</view>
+                              <view class="orderTitle">{{item.orderTitle}}</view>
+                              <view class="p">
+                                  <text>{{item.ordertext}}</text>
+                                  <text>{{item.ordertext2}}</text>
+                              </view>
+                          </view>
+                      </navigator>
+                      <view class="btn">
+                          <button>{{item.btn}}</button>
+                      </view>
+                  </li>
+              </block>
+          </ul>
+      </view>
+  </view>
+  <view class="{{selected4?'show':'hidden'}}">
+      <!-- 空状态 -->
+      <view class="empty">
+          <view class="emptyContent">
+              <image src="/images/icon/empty.png"></image>
+              <text>暂无相关拍品</text>
+          </view>
+      </view>
+  </view>
+  <view class="{{selected5?'show':'hidden'}}">
+      <!-- 空状态 -->
+      <view class="empty">
+          <view class="emptyContent">
+              <image src="/images/icon/empty.png"></image>
+              <text>暂无相关拍品</text>
+          </view>
+      </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

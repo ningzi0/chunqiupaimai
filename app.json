@@ -1,0 +1,63 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/simulation/simulation",
+    "pages/simulation2/simulation2",
+    "pages/my/my",
+    "pages/service/service",
+    "pages/team/team",
+    "pages/house/house",
+    "pages/assets/assets",
+    "pages/list/list",
+    "pages/help/help",
+    "pages/helpshow/helpshow",
+    "pages/order/order",
+    "pages/Collection/Collection",
+    "pages/deposit/deposit",
+    "pages/info/info",
+    "pages/sell/sell",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eb0347",
+    "navigationBarTitleText": "春秋拍卖",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#ddd"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#d90f09",
+    "borderStyle": "black" ,
+    "list": [{
+      "selectedIconPath": "images/icon/footer1_active.png",
+      "iconPath": "images/icon/footer1.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "selectedIconPath": "images/icon/footer4_active.png",
+      "iconPath": "images/icon/footer4.png",
+      "pagePath": "pages/assets/assets",
+      "text": "资产"
+    }, {
+      "selectedIconPath": "images/icon/footer2_active.png",
+      "iconPath": "images/icon/footer2.png",
+      "pagePath": "pages/list/list",
+      "text": "模拟拍卖"
+    },{
+      "selectedIconPath": "images/icon/footer3_active.png",
+      "iconPath": "images/icon/footer3.png",
+      "pagePath": "pages/my/my",
+      "text": "我的"
+    }
+    ]
+  },
+
+
+
+
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

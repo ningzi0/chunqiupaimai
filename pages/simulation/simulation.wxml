@@ -1,0 +1,266 @@
+<view class="banner">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+        <block wx:for="{{movies}}" wx:for-index="index">  
+            <swiper-item>  
+                <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+            </swiper-item>  
+        </block>
+    </swiper>
+    <view class="banner_tag">
+        <view class="b_tagItem flex1">拍卖进行中</view>
+        <view class="b_tagItem flex2">12月24日 10:10:00 结束</view>
+    </view>
+</view>
+
+
+<!-- 标题价格 -->
+<view class="simulationTitle">
+    <view class="title">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
+    <view class="price clearfix">
+        <view class="current">
+            <text class="currentTit">当前价：</text>
+            <text class="currentPrice">1547,336</text>
+            <text class="currentSmall">元</text>
+        </view>
+        <view class="number">
+            <!-- 收藏按钮 -->
+            <view class="detail-shoucang" style="background-color:{{BgColor}}" bindtap='shoucang'><text class="detail-shoucang.text">{{shoucang}}</text></view>
+        </view>
+    </view>
+    <view class="tips">
+        <text>499次围观</text>
+        <text>258人模拟</text>
+    </view>
+</view>
+
+
+<!-- 内容区域 -->
+<view class="simulationContent">
+    <!-- 竞买记录 -->
+    <view class="record">
+        <view class="recordTit">竞买记录(3)</view>
+        <view class="recordContent">
+          <view class="recordCon">
+              <view class="li active">
+                  <text>N150</text>
+                  <text>1547,336元</text>
+                  <view class="tag">领先</view>
+              </view>
+              <view class="li">
+                  <text>N150</text>
+                  <text>1547,336元</text>
+                  <view class="tag">出局</view>
+              </view>
+              <view class="li">
+                  <text>N150</text>
+                  <text>1547,336元</text>
+                  <view class="tag">出局</view>
+              </view>
+          </view>
+        </view>
+    </view>
+
+    <!-- 标的信息 -->
+    <view class="mark_info">
+        <view class="mark_infoTitle">标的信息</view>
+        <view class="mark_infoCon clearfix">
+            <text>起拍价：1547,336元</text>
+            <text>保证金：150,000元</text>
+            <text>加价幅度：1000元</text>
+            <text>评估价：2135,336元</text>
+            <text>竞价时间：不限</text>
+            <text>标的所在地：无</text>
+            <text>标的类型：模拟拍卖</text>
+            <text>限时竞价时间：5分钟</text>
+            <text>截止时间：无</text>
+        </view>
+    </view>
+
+    <!-- 拍卖师发言 -->
+    <view bindtap="clickme" class="pms_message">
+        <image src="/images/icon/message.png"></image>
+        <text>拍卖师发言</text>
+    </view>  
+ 
+    <!--屏幕背景变暗的背景  -->
+    <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+    <!--弹出框  -->
+    <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+        <view class="title">拍卖师发言</view>
+        <view class="commodityContent">
+            <view class="no">暂无拍卖师发言</view>
+        </view>
+    </view>
+
+
+
+    <!-- table -->
+    <view class="table">
+        <view class="tab-title smallTitle">
+            <view class="{{selected1?'border-tottom':'default'}} titleItem" bindtap="selected1">标的介绍</view>
+            <view class="{{selected2?'border-tottom':'default'}} titleItem" bindtap="selected2">拍卖公告</view>
+            <view class="{{selected3?'border-tottom':'default'}} titleItem" bindtap="selected3">竞拍须知</view>
+            <view class="{{selected4?'border-tottom':'default'}} titleItem" bindtap="selected4">重要提示</view> 
+        </view>
+        <view class="tab-content">
+            <view class="{{selected1?'show':'hidden'}}">
+                <view class="p">
+                    <view class="add">· 标的物介绍 ·</view>
+                </view>
+                <view class="p">
+                    <text class="b">拍品名称:</text>
+                    <text class="text">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</text>
+                </view>
+                <view class="p">
+                    <text class="b">权利来源:</text>
+                    <text class="text">司法裁定</text>
+                </view>
+                <view class="p">
+                    <text class="b">权证情况:</text>
+                    <text class="text">邕房权证字第01980723号、邕房权证字第01980724号</text>
+                </view>
+                <view class="p">
+                    <text class="b">拍品所有人:</text>
+                    <text class="text">某某某</text>
+                </view>
+                <view class="p">
+                    <text class="b">拍品现状:</text>
+                    <text class="text">按现状拍卖交付（不含家具家电）</text>
+                </view>
+                <view class="p">
+                    <text class="b">权利限制及瑕疵情况:</text>
+                    <text class="text">1、竞买人在竞标前必须详细了解标的物的实际情况，调查该标的物是否存在瑕疵，一旦决定竞买，即表明已完全了解，并接受标的物的现状和一切已知及未知的瑕疵，后果自行负责；</text>
+                    <text class="text">2对拍卖标的物能否办理登记、过户手续及如何办理等事宜，请买受人自行到相关职能部门咨询确认。因标的物现状及存在的瑕疵等原因不能或延迟办理登记过户手续，由买受人自行承担，法院不作变更登记的任何承诺；</text>
+                    <text class="text">3、标的物在办理产权变更和移交过程中由原权利人及买受人承担的税费，依照法律、法规规定由原权利人和买受人各自负担，但原权利人负担的部分由买受人先行垫付。成交执行裁定书送达买受人之前拍卖标的可能存在的水、电、煤、物业管理费、车位管理费等欠费均由买受人负担。车辆存在的违章记录及罚款、停车费等由买受人承担。</text>
+                </view>
+                <view class="p">
+                    <text class="b">提供的文件:</text>
+                    <text class="text">《网络拍卖（变卖）成交确认书》。</text>
+                </view>
+                <view class="p">
+                    <text class="b">拍品介绍:</text>
+                    <text class="text">1.不动产单元号：450105002006GB00345F00010001。</text>
+                    <text class="text">2.建筑面积：367.99平方米，分摊建筑面积：0平方米。</text>
+                    <text class="text">3.权证情况：邕房权证字第01980723号，邕房权证字第01980724号。</text>
+                    <text class="text">4.房屋性质：私人自建；规划用途：住宅。</text>
+                    <text class="text">5.抵押登记：①南宁市区农村信用合作联社亭子信用社②广西澳亚融资性担保有限公司。</text>
+                </view>
+                <view class="p">
+                    <image src="/images/house.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="p">
+                    <view class="add">· 标的物位置 ·</view>
+                    <view class="text">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
+                </view>
+            </view>
+            <view class="{{selected2?'show':'hidden'}}">
+                <view class="p">
+                    <view class="add">· 竞拍公告 ·</view>
+                </view>
+                <view class="p">本平台定于2020年12月21日10：00至2020年12月22日10：00（延时的除外）在春秋拍卖网络平台被执行人某某某名下坐落于贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅进行网络公开拍卖，现公告如下：</view>
+                <view class="p">
+                    <text class="b">一、拍卖标的：</text>
+                    <text class="text">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</text>
+                </view>
+                <view class="p">
+                    <text class="b">标的物详情：</text>
+                    <text class="text">1.不动产单元号：450105002006GB00345F00010001。</text>
+                    <text class="text">2.建筑面积：367.99平方米，分摊建筑面积：0平方米。</text>
+                    <text class="text">3.权证情况：邕房权证字第01980723号，邕房权证字第01980724号。</text>
+                    <text class="text">4.房屋性质：私人自建；规划用途：住宅。</text>
+                    <text class="text">5.抵押登记：①南宁市区农村信用合作联社亭子信用社②广西澳亚融资性担保有限公司。</text>
+                </view>
+                <view class="p">
+                    <text class="b">二、竞价时间及起拍价、保证金、增价幅度:</text>
+                    <text class="text">2020年12月21日10：00至2020年12月22日10：00（延时的除外）。</text>
+                    <text class="text">起拍价：3570607元，保证金714121元，增价幅度2000元。</text>
+                </view>
+                <view class="p">三、拍卖方式：设有起拍价的增价拍卖方式。竞价程序结束前五分钟内无人出价的，最后出价即为成交价；有出价的，竞价时间自该出价时点顺延五分钟。</view>
+                <view class="p">四、竞买人条件: 凡具备完全民事行为能力的公民、法人和其他组织均可参加竞买。参与竞买人需要有淘宝账户（未有账户者可委托他人竞买并填写网拍授权委托书）。</view>
+                <view class="p">法律、行政法规和司法解释对买受人资格或者条件有特殊规定的，竞买人应当具备规定的资格或条件。因不符合条件参加竞买的，由竞买人自行承担相应的法律责任。</view>
+                <view class="p">五、拍品展示（咨询）时间与方式: 自公告之日起至拍卖开始前一日止接受咨询（具体咨询时间：周一至周五，每天上午9:00至12:00，下午15:00至18:00），本院已委托广西智赛科技有限公司代为进行房产推介及展示（该项费用由法院在竞买成交款中支付，不另行向竞买人收取），竞买人需要咨询、实地勘查标的物的，请与广西智赛科技有限公司进行联系，看样时间根据预约情况由辅助机构统一安排并且请在开拍前10天进行微信预约</view>
+                <view class="p">六、拍卖财产已知瑕疵:本院对拍卖标的物所作的说明和提供的图片等，仅供竞买人参考，不构成对标的物的任何担保。标的物以实物现状为准，法院不承担拍卖标的瑕疵保证。</view>
+                <view class="p">七、特别提醒：本次拍卖的标的物仅为房产，不包含房产内的家具、家电等物品。司法拍卖标的因保证金、成交价金额较大，请竞买人自行了解银行相关规定，避免遇到因当天限额无法支付等情况。</view>
+                <view class="p">八、对上述标的物的权属有异议者，请于拍卖七日前与本院联系。本次拍卖事项经本院以EMS邮政特快专递方式书面通知各方当事人。本案当事人无法送达的，自本公告公示满五日视为已经通知。</view>
+                <view class="p">九、税费清单（仅供参考，以相关部门实际收取为准）</view>
+            </view>
+            <view class="{{selected3?'show':'hidden'}}">
+                <view class="p">
+                    <view class="add">· 竞拍须知 ·</view>
+                </view>
+                <view class="p">参与竞买的竞买人请认真阅读以下拍卖须知：</view>
+                <view class="p">一、本《拍卖须知》根据《中华人民共和国民事诉讼法》等相关法律规定所制订，竞买人应认真仔细阅读，了解本须知的全部内容。</view>
+                <view class="p">二、本次拍卖活动遵循“公开、公平、公正、诚实守信”的原则，拍卖活动具备法律效力。参加本次拍卖活动的当事人和竞买人必须遵守本须知的各项条款，并对自己的行为承担法律责任。</view>
+                <view class="p">三、拍卖标的以现状进行拍卖，其外观、结构、固定装修及内在质量以移交时的现状为准。房地产的实际面积以过户时登记机关确定为准。拍卖人对房屋外观、质量问题、结构调整、固定装修损坏、房地产面积差异等不作担保，由买受人自行承担相关责任，由此产生的问题不影响拍卖成交结果及成交价格。</view>
+                <view class="p">如有房屋结构与发证时发生改变的，由竞买人自行到相关职能部门了解能否办理过户手续；须修复的相关费用由买受人承担。</view>
+                <view class="p">竞买条件</view>
+                <view class="p">一、【竞买人资格】凡具备完全民事行为能力的自然人和法人均可参加竞买。</view>
+                <view class="p">法律、行政法规和司法解释对买受人资格或者条件有特殊规定的，竞买人应当具备规定的资格或条件。如：竞买南宁市房地产开发项目建筑区划内的车位和车库的，竞买人应为该项目的购房人（小区业主）；购买机动车的，竞买人应符合机动车所在地车辆管理部门规定的入户（过户）身份条件。</view>
+                <view class="p">不符合条件参加竞买的，竞买人自行承担相应的法律责任。</view>
+                <view class="p">二、【委托竞买】如参与竞买人未在拍卖平台开设账户，可委托代理人（具备完全民事行为能力的自然人）进行，但须在竞买开始前向南宁市江南区人民法院办理委托手续；竞买成功后，竞买人（法定代表人、其他组织的负责人）须与委托代理人一同到南宁市江南区人民法院办理交接手续。如委托手续不全，竞买活动认定为委托代理人的个人行为。委托手续应于拍卖前一日向本院提交合法有效的证明，资格经法院确认后方能进行委托。</view>
+                <view class="p">三、【优先购买权】优先购买权人参加竞买的，应于拍卖前一日前向本院提交合法有效的证明，资格经法院确认后才能参与竞买，逾期不提交的，视为放弃对本标的物享有优先购买权。</view>
+                <view class="p">优先购买权人参与竞买的，可以与其他竞买人以相同的价格出价，没有更高出价的，拍卖财产由优先购买权人竞得。顺序不同的优先购买权人以相同价格出价的，由顺序在先的优先购买权人竞得。顺序相同的优先购买权人以相同价格出价的，由出价在先的优先购买权人竞得。</view>
+                <view class="p">四、与本标的物有利害关系的当事人可参加竞拍，不参加竞拍的请关注本次拍卖活动的整个过程。</view>
+            </view>
+            <view class="{{selected4?'show':'hidden'}}">
+                <view class="p">
+                    <view class="add">· 重要提示 ·</view>
+                </view>
+                <view class="p">暂无重要提示</view>
+            </view>
+        </view>
+
+        <navigator class="nav_btn" url="/pages/simulation2/simulation2">
+            <view class="btn">参与竞拍</view>
+        </navigator>
+
+    </view>
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

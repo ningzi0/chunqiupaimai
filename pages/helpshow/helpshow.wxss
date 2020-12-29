@@ -1,0 +1,78 @@
+/* pages/helpshow/helpshow.wxss */
+page{
+  background: #fff;
+}
+
+.helpShowTitle{
+  font-weight: bold;
+}
+
+.helpShow{
+  font-size: 0.85em;
+  padding: 1.2em 2em;
+}
+
+.helpShowCon{
+  margin-bottom: 4em;
+}
+
+.helpShowCon .p{
+  line-height: 1.75;
+  margin: 1.5em 0;
+}
+
+
+
+
+.serviceWrap{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0.5em;
+  box-sizing: border-box;
+  box-shadow: 0 0 1em rgba(0,0,0,0.1);
+}
+.serviceWrap button{
+  width: 100% !important;
+  background: #d90f09;
+}
+.serviceWrap button image{
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.serviceWrap button text{
+  font-weight: 300;
+  display: inline-block;
+  color: #fff;
+  margin-left: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

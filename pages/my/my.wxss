@@ -1,0 +1,159 @@
+/* pages/my/my.wxss */
+page{
+  background-color: #eaebef;
+}
+.myTitle{
+  background: #eb0347;
+}
+.myheader{
+  text-align: center;
+  padding: 1.2em 0;
+}
+.myheader image{
+  display: block;
+  width: 4em;
+  height: 4em;
+  margin: 0.5em auto;
+  border-radius: 50%;
+}
+.myheader text{
+  display: block;
+  color: #fff;
+}
+
+.mytable{
+  background: #fff;
+  margin: 0.75em 2% 0;
+  border-radius: 0.35em;
+}
+.mytableUl{
+  display: flex;
+}
+.mytableLi{
+  text-align: center;
+  flex: 1;
+}
+.mytableLi navigator{
+  padding: 0.75em 0;
+}
+.mytableLi image{
+  width: 2em;
+  height: 2em;
+  display: block;
+  margin: 0 auto;
+}
+.mytableLi text{
+  display: block;
+  font-size: 0.9em;
+  margin: 0.5em 0;
+}
+.mytableTitle{
+  font-weight: bold;
+  padding: 0.5em;
+  font-size: 1.1em;
+  border-bottom: 1px solid #eee;
+}
+.myContent{
+  padding: 0 2%;
+}
+.mylist{
+  background: #fff;
+  margin: 3% 0;
+  border-radius: 0.35em;
+}
+.mylistLi navigator{
+  padding: 0.75em;
+  font-size: 1.1em;
+  border-radius: 0.35em;
+  border-bottom: 1px solid #eee;
+}
+.mylistTitle{
+  font-weight: bold;
+}
+.mylistLi .see{
+  float: right;
+  color: #9c9c9c;
+}
+.tool{
+  background: #fff;
+  margin: 3% 0;
+  border-radius: 0.35em;
+}
+.toolTitle{
+  font-size:1.1em ;
+  font-weight: bold;
+  padding: 0.75em;
+}
+.toolLi{
+  text-align: center;
+  width: 25%;
+}
+.toolLi navigator{
+  padding: 0.75em 0;
+}
+.toolLi button.navigator{
+  width: auto;
+  background:none;
+  font-weight: 500;
+  padding: 0.5em 0;
+}
+.toolLi image{
+  width: 2.1em;
+  height: 2.1em;
+  display: block;
+  margin: 0 auto;
+}
+.toolLi text,.toolLi button.navigator text{
+  display: block;
+  font-size: 0.85em;
+}
+.toolList{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.recommendTit{
+  text-align: center;
+  font-size: 0.95em;
+  color: #919296;
+  padding: 0.75em 0;
+}
+.recommendTit .line{
+  width: 3em;
+  border-top: 1px solid #919296;
+  display: inline-block;
+  vertical-align: middle;
+}
+.recommendTit .text{
+  margin: 0 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<view class="orderCon">
+    <ul>
+        <block wx:for="{{orderArray}}">
+            <li>
+                <navigator>
+                    <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                    <view class="orderContent">
+                        <view class="tags">{{item.tags}}</view>
+                        <view class="orderTitle">{{item.orderTitle}}</view>
+                        <view class="p">
+                            <text>{{item.ordertext}}</text>
+                            <text>{{item.ordertext2}}</text>
+                        </view>
+                    </view>
+                </navigator>
+                <view class="btn">
+                    <button>{{item.btn}}</button>
+                </view>
+            </li>
+        </block>
+    </ul>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

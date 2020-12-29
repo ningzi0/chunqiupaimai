@@ -1,0 +1,91 @@
+<!--pages/assets/assets.wxml-->
+<view class="fixed">
+  <view class="search">
+      <input type="text" confirm-type="search" placeholder="请输入资产内容"/>
+      <image src="/images/icon/search_ico.png" ></image>
+  </view>
+  <!-- =======下拉筛选======= -->
+  <view class="tabTit box">
+      <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+          <text>{{item}}</text>
+          <image src="/images/icon/down.png"></image>
+      </view>
+  </view>
+</view>
+<!--筛选项-->
+<view class="tabLayer" hidden="{{tab[0]}}">
+    <text class="{{pinpai_id==0?'active':''}}" data-id="0" data-index="0" data-txt="默认排序" bindtap="filter">不限</text>
+    <text class="{{pinpai_id==item.id?'active':''}}" wx:for="{{pinpaiList}}" wx:key="pp" wx:for-item="item" data-id="{{item.id}}" data-index="0" data-txt="{{item.title}}" bindtap="filter">{{item.title}}</text>
+</view>
+<view class="tabLayer" hidden="{{tab[1]}}">
+    <text class="{{jiage_id==0?'active':''}}" data-id="0" data-index="1" data-txt="全部" bindtap="filter">全部</text>
+    <text class="{{jiage_id==1?'active':''}}" data-id="1" data-index="1" data-txt="机动车" bindtap="filter">机动车</text>
+    <text class="{{jiage_id==2?'active':''}}" data-id="2" data-index="1" data-txt="房产" bindtap="filter">房产</text>
+    <text class="{{jiage_id==3?'active':''}}" data-id="3" data-index="1" data-txt="土地" bindtap="filter">土地</text>
+    <text class="{{jiage_id==4?'active':''}}" data-id="4" data-index="1" data-txt="股权债券" bindtap="filter">股权债券</text>
+    <text class="{{jiage_id==5?'active':''}}" data-id="5" data-index="1" data-txt="文物艺术品" bindtap="filter">文物艺术品</text>
+    <text class="{{jiage_id==6?'active':''}}" data-id="6" data-index="1" data-txt="农副产品" bindtap="filter">农副产品</text>
+    <text class="{{jiage_id==7?'active':''}}" data-id="7" data-index="1" data-txt="其他交通工具" bindtap="filter">其他交通工具</text>
+</view>
+<view class="tabLayer" hidden="{{tab[2]}}">
+    <text class="{{xiaoliang_id==0?'active':''}}" data-id="0" data-index="2" data-txt="全区域" bindtap="filter">全区域</text>
+    <text class="{{xiaoliang_id==1?'active':''}}" data-id="1" data-index="2" data-txt="南明区" bindtap="filter">南明区</text>
+    <text class="{{xiaoliang_id==2?'active':''}}" data-id="2" data-index="2" data-txt="乌当区" bindtap="filter">乌当区</text>
+</view>
+<view class="tabLayer" hidden="{{tab[3]}}">
+    <text class="{{zhuangtai_id==0?'active':''}}" data-id="0" data-index="3" data-txt="状态" bindtap="filter">不限</text>
+    <text class="{{zhuangtai_id==1?'active':''}}" data-id="1" data-index="3" data-txt="正在进行" bindtap="filter">正在进行</text>
+    <text class="{{zhuangtai_id==2?'active':''}}" data-id="2" data-index="3" data-txt="即将开始" bindtap="filter">即将开始</text>
+    <text class="{{zhuangtai_id==3?'active':''}}" data-id="3" data-index="3" data-txt="已成交" bindtap="filter">已成交</text>
+    <text class="{{zhuangtai_id==4?'active':''}}" data-id="4" data-index="3" data-txt="已流拍" bindtap="filter">已流拍</text>
+    <text class="{{zhuangtai_id==5?'active':''}}" data-id="5" data-index="3" data-txt="已撤拍" bindtap="filter">已撤拍</text>
+</view>
+<!-- =======下拉筛选======= -->
+
+
+<view class="assetsContent">
+    <ul>
+        <block wx:for="{{assetsConArray}}">
+            <li>
+                <navigator class="clearfix" url="/pages/simulation/simulation">
+                    <view class="pic">
+                        <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="assetsCon">
+                        <view class="assetTit">{{item.assetTit}}</view>
+                        <view class="p">{{item.assetDate}}</view>
+                        <view class="price">
+                            <text class="small">当前价:</text>
+                            <text class="big">{{item.price}}</text>
+                            <text class="small">万元</text>
+                        </view>
+                        <view class="p">
+                            <text>{{item.text1}}次围观</text>
+                            <text>{{item.text2}}次出价</text>
+                        </view>
+                        <view class="tags {{item.tagsClass}}">{{item.tags}}</view>
+                    </view>
+                </navigator>
+            </li>
+        </block>
+    </ul>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

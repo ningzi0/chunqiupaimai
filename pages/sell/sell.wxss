@@ -1,0 +1,39 @@
+/* pages/sell/sell.wxss */
+.sell image{
+  width: 7em;
+  height: 7em;
+}
+.sell{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 0.95em;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  width: 80%;
+}
+.sell .p{
+  margin-bottom: 1em;
+  color: #999;
+}
+.sell button{
+  margin: 0.35em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

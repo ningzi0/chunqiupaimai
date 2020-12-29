@@ -1,0 +1,273 @@
+<!--index.wxml-->
+<view class="container bgcolor">
+    <view class="logo_tel">
+        <view class="tel">
+            <view class="telwrap">
+                <image src="/images/icon/tel.png"></image>
+                <text>0851-86768179</text>
+            </view>
+            <view class="baowrap">
+                <image src="/images/icon/bao.png"></image>
+                <text>假一赔三</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 轮播图 -->
+    <view class="banner">
+        <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+            <block wx:for="{{movies}}" wx:for-index="index">  
+                <swiper-item>  
+                <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+                </swiper-item>  
+            </block>
+        </swiper>
+    </view>
+
+    <!-- 搜索分类 -->
+    <view class="search_sort">
+        <!-- 搜索 -->
+        <view class="search">
+            <input type="text" confirm-type="search" placeholder="房产"/>
+            <image src="/images/icon/search_ico.png" ></image>
+            <view class="btn">搜索</view>
+        </view>
+        
+        <!-- 分类 -->
+        <view class="sort">
+            <view class="li">
+                <block wx:for="{{sortArray}}">
+                    <navigator url="{{item.url}}">
+                        <image src="{{item.imgSrc}}"></image>
+                        <text>{{item.text}}</text>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+        
+        <!-- 竞拍流程 -->
+        <view class="process">
+            <view class="processTitle">竞拍流程</view>
+            <view class="processList">
+                <view class="processWrap">
+                    <view class="processItem">
+                        <image src="/images/icon/process1.png"></image>
+                        <text>注册认证</text>
+                    </view>
+                    <image src="/images/icon/right_arr.png" class="rightarr"></image>
+                    <view class="processItem">
+                        <image src="/images/icon/process2.png"></image>
+                        <text>拍前准备</text>
+                    </view>
+                    <image src="/images/icon/right_arr.png" class="rightarr"></image>
+                    <view class="processItem">
+                        <image src="/images/icon/process3.png"></image>
+                        <text>交保证金</text>
+                    </view>
+                    <image src="/images/icon/right_arr.png" class="rightarr"></image>
+                    <view class="processItem">
+                        <image src="/images/icon/process4.png"></image>
+                        <text>出价竞拍</text>
+                    </view>
+                    <image src="/images/icon/right_arr.png" class="rightarr"></image>
+                    <view class="processItem">
+                        <image src="/images/icon/process5.png"></image>
+                        <text>竞拍成功</text>
+                    </view>
+                    <image src="/images/icon/right_arr.png" class="rightarr"></image>
+                    <view class="processItem">
+                        <image src="/images/icon/process6.png"></image>
+                        <text>办理交割</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <!-- 公告 -->
+        <view class="Notice">
+            <view class="noticeTitle">公告：</view>
+            <view class="noticeCon">
+                <swiper class="swiper_zi" vertical="true" autoplay="true" circular="true" interval="3000">
+                    <block wx:for="{{adList}}">
+                        <swiper-item>
+                            <view class="zimubox">
+                                <view class="swiper_item"><text class="tags">{{item.tags}}</text>{{item.title}}</view>
+                            </view>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </view>
+    </view>
+
+    <!-- 今日拍卖-正在进行-近期预告 -->
+    <view class="indexContent">
+        <view class="tab">
+            <view class="tab-title bigtitle">
+                <view class="{{selected1?'border-tottom':'default'}} titleItem" bindtap="selected1"><view class="tags"><text>今日拍</text></view><text class="today">今日</text>拍卖</view>
+                <view class="{{selected2?'border-tottom':'default'}} titleItem" bindtap="selected2"><view class="tags"><text>进行中</text></view><text class="now">正在</text>进行</view>
+                <view class="{{selected5?'border-tottom':'default'}} titleItem" bindtap="selected5"><view class="tags"><text>预告中</text></view><text class="future">近期</text>预告</view>
+            </view>
+            <view class="tab-content">
+                <view class="{{selected1?'show':'hidden'}}">
+                    <view class="tab">
+                        <view class="tab-title smallTitle">
+                            <view class="{{selected3?'border-tottom':'default'}} titleItem" bindtap="selected3">房产</view>
+                            <view class="{{selected4?'border-tottom':'default'}} titleItem" bindtap="selected4">机动车</view>
+                            <view class="{{selected6?'border-tottom':'default'}} titleItem" bindtap="selected6">资产</view>
+                        </view>
+                        <view class="tab-content">
+                            <view class="{{selected3?'show':'hidden'}}">
+                                <view class="ul">
+                                    <block wx:for="{{conArray}}">
+                                        <view class="li">
+                                            <navigator url="/pages/simulation/simulation">
+                                                <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                                                <view class="tabCon">
+                                                    <view class="t_ctit">{{item.t_ctit}}</view>
+                                                    <view class="tabinfo">
+                                                        <view class="tabinfoItem">
+                                                            <text class="tabinfoItemTit">当前价</text>
+                                                            <text class="tabinfoPrice">{{item.tabinfoPrice}}</text>
+                                                        </view>
+                                                        <view class="tabinfoItem">
+                                                            <text class="tabinfoItemTit">评估价</text>
+                                                            <text class="tabinfo_price">￥{{item.tabinfo_price}}</text>
+                                                        </view>
+                                                        <view class="tabinfoItem">
+                                                            <text class="tabinfoItemTit">预 计</text>
+                                                            <text class="tabinfo_price"><text class="b">{{item.tabinfo_time}}</text>开始</text>
+                                                        </view>
+                                                    </view>
+                                                    <view class="tabinfoBtnWrap clearfix">
+                                                        <view class="tabinfoBtn">今日拍卖</view>
+                                                    </view>
+                                                    <view class="tabinfoBottom">
+                                                        <view class="tabinfoB_item"><text class="b">{{item.tabinfo_number}}</text>次围观</view>
+                                                        <view class="tabinfoB_item"><text class="b">{{item.tabinfo_number2}}</text>人报名</view>
+                                                    </view>
+                                                </view>
+                                            </navigator>
+                                        </view>
+                                    </block>
+                                </view>
+
+                            </view>
+                            <view class="{{selected4?'show':'hidden'}}">今日拍卖内容2</view>
+                            <view class="{{selected6?'show':'hidden'}}">今日拍卖内容3</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="{{selected2?'show':'hidden'}}">
+                    <view class="tab">
+                        <view class="tab-title smallTitle">
+                            <view class="{{selected3?'border-tottom':'default'}} titleItem" bindtap="selected3">房产</view>
+                            <view class="{{selected4?'border-tottom':'default'}} titleItem" bindtap="selected4">机动车</view>
+                            <view class="{{selected6?'border-tottom':'default'}} titleItem" bindtap="selected6">资产</view>
+                        </view>
+                        <view class="tab-content">
+                            <view class="{{selected3?'show':'hidden'}}">正在进行内容1</view>
+                            <view class="{{selected4?'show':'hidden'}}">正在进行内容2</view>
+                            <view class="{{selected6?'show':'hidden'}}">正在进行内容3</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 更多 -->
+        <view class="more">
+            <navigator>更多<text>7152</text>件</navigator>
+        </view>
+    </view>
+
+
+
+    <!-- 往期拍卖 -->
+    <view class="before">
+        <view class="beforeTit clearfix">
+            <view class="beforeTitFl"><text>往期</text>拍卖</view>
+            <view class="beforeTitFr">
+                <picker mode="date" value="{{date}}" start="2010-09-01" end="9999-12-31" bindchange="bindDateChange">
+                    <view class="picker">
+                    当前选择: {{date}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        
+        <view class="beforeContent">
+            <view class="tab">
+                <view class="tab-title smallTitle">
+                    <view class="{{selected7?'border-tottom':'default'}} titleItem" bindtap="selected7">12月3日</view>
+                    <view class="{{selected8?'border-tottom':'default'}} titleItem" bindtap="selected8">12月2日</view>
+                    <view class="{{selected9?'border-tottom':'default'}} titleItem" bindtap="selected9">12月1日</view>
+                </view>
+                <view class="tab-content">
+                    <view class="{{selected7?'show':'hidden'}}">
+                        <view class="ul">
+                            <block wx:for="{{beforeArray}}">
+                                <view class="li">
+                                    <navigator url="/pages/simulation/simulation">
+                                        <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                                        <view class="tabCon">
+                                            <view class="t_ctit">{{item.t_ctit}}</view>
+                                            <view class="tabinfo">
+                                                <view class="tabinfoItem">
+                                                    <text class="tabinfoItemTit">成交价</text>
+                                                    <text class="tabinfoPrice">{{item.tabinfoPrice}}</text>
+                                                </view>
+                                                <view class="tabinfoItem">
+                                                    <text class="tabinfoItemTit">市场价</text>
+                                                    <text class="tabinfo_price">￥{{item.tabinfo_price}}</text>
+                                                </view>
+                                                <view class="tabinfoItem">
+                                                    <text class="tabinfoItemTit">结束</text>
+                                                    <text class="tabinfo_price"><text class="b">{{item.tabinfo_time}}</text></text>
+                                                </view>
+                                            </view>
+                                            <view class="tabinfoBtnWrap clearfix">
+                                                <view class="tabinfoBtn">已结束</view>
+                                            </view>
+                                            <view class="tabinfoBottom">
+                                                <view class="tabinfoB_item"><text class="b">{{item.tabinfo_number}}</text>次围观</view>
+                                                <view class="tabinfoB_item"><text class="b">{{item.tabinfo_number2}}</text>人报名</view>
+                                            </view>
+                                        </view>
+                                    </navigator>
+                                </view>
+                            </block>
+                        </view>
+
+                    </view>
+                    <view class="{{selected8?'show':'hidden'}}">往期拍卖内容2</view>
+                    <view class="{{selected9?'show':'hidden'}}">往期拍卖内容3</view>
+                </view>
+            </view>
+        </view>
+        <!-- 更多 -->
+        <view class="more">
+            <navigator>更多<text>7152</text>件</navigator>
+        </view>
+    </view>
+
+
+
+
+    <!-- 模态弹框 -->
+    <view class="ejectMask" hidden="{{hidden}}">
+        <view class="eject">
+            <navigator>
+                <image src="/images/eject.jpg" mode="aspectFill"></image>
+            </navigator>
+            <view class="close" bindtap="close">
+                <image src="/images/icon/close.png"></image>
+            </view>
+        </view>
+    </view>
+
+
+
+
+
+
+</view>

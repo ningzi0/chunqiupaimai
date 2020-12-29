@@ -1,0 +1,121 @@
+<!--pages/team/team.wxml-->
+<view class="team">
+    <view class="tab-title smallTitle">
+        <view class="{{selected1?'border-tottom':'default'}} titleItem" bindtap="selected1">全部</view>
+        <view class="{{selected2?'border-tottom':'default'}} titleItem" bindtap="selected2">评估师</view>
+        <view class="{{selected3?'border-tottom':'default'}} titleItem" bindtap="selected3">律师</view>
+        <view class="{{selected4?'border-tottom':'default'}} titleItem" bindtap="selected4">拍卖师</view> 
+    </view>
+
+
+    <view class="tab-content">
+        <view class="{{selected1?'show':'hidden'}}">
+            <view class="teamCon">
+                <block wx:for="{{teamArray}}">
+                    <view class="teamConli">
+                        <view class="teamConTop clearfix">
+                            <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                            <view class="teamConTopRight">
+                                <view class="name">{{item.name}}</view>
+                                <view class="p">职业：{{item.occupation}}</view>
+                                <view class="p">领域：{{item.field}}</view>
+                            </view>
+                        </view>
+                        <view class="describe">
+                            <view class="p">{{item.describe}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="{{selected2?'show':'hidden'}}">
+          <view class="teamCon">
+                <block wx:for="{{teamArray2}}">
+                    <view class="teamConli">
+                        <view class="teamConTop clearfix">
+                            <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                            <view class="teamConTopRight">
+                                <view class="name">{{item.name}}</view>
+                                <view class="p">职业：{{item.occupation}}</view>
+                                <view class="p">领域：{{item.field}}</view>
+                            </view>
+                        </view>
+                        <view class="describe">
+                            <view class="p">{{item.describe}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="{{selected3?'show':'hidden'}}">
+            <view class="teamCon">
+                <block wx:for="{{teamArray3}}">
+                    <view class="teamConli">
+                        <view class="teamConTop clearfix">
+                            <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                            <view class="teamConTopRight">
+                                <view class="name">{{item.name}}</view>
+                                <view class="p">职业：{{item.occupation}}</view>
+                                <view class="p">领域：{{item.field}}</view>
+                            </view>
+                        </view>
+                        <view class="describe">
+                            <view class="p">{{item.describe}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="{{selected4?'show':'hidden'}}">
+          <view class="teamCon">
+                <block wx:for="{{teamArray4}}">
+                    <view class="teamConli">
+                        <view class="teamConTop clearfix">
+                            <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                            <view class="teamConTopRight">
+                                <view class="name">{{item.name}}</view>
+                                <view class="p">职业：{{item.occupation}}</view>
+                                <view class="p">领域：{{item.field}}</view>
+                            </view>
+                        </view>
+                        <view class="describe">
+                            <view class="p">{{item.describe}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

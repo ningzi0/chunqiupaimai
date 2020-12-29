@@ -1,0 +1,8 @@
+/* pages/list/list.wxss */
+.tabLayer{
+  top: 200rpx;
+  padding-top: 10px;
+}
+.assetsContent{
+  margin-top: 6.6em;
+}

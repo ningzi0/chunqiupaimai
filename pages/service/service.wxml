@@ -1,0 +1,66 @@
+<!--pages/service/service.wxml-->
+<view class="service">
+    <view class="li">
+        <view class="serviceTit">房屋尽调</view>
+        <view class="p">由律师、房地产评估师对房屋的现状、权益、瑕疵等进行详细调查，并将调查结果反馈客户。</view>
+    </view>
+
+    <view class="li">
+        <view class="serviceTit">金融服务</view>
+        <view class="p">根据客户需要提供贷款咨询、按揭贷款代办、房款垫资等金融服务。</view>
+    </view>
+
+    <view class="li">
+        <view class="serviceTit">过户代办</view>
+        <view class="p">通过公证授权委托，全权代办缴税、过户，保障客户在最快的时间拿到产权证书。</view>
+    </view>
+
+    <view class="li">
+        <view class="serviceTit">房屋交割</view>
+        <view class="p">全程协助办理水、电、燃气、物业等费用的洁清及过户。</view>
+    </view>
+
+    <view class="li">
+        <view class="serviceTit">公正服务</view>
+        <view class="p">根据客户需要，提供合同、授权委托、财产分割、遗嘱、继承等公正服务。</view>
+    </view>
+
+    <view class="li footer">
+        <view class="text">联系我们：0851-86768179</view>
+        <view class="text">地址：贵州省贵阳市南明区中华南路20号新大陆数码广场十楼D座</view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

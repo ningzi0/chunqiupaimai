@@ -1,0 +1,96 @@
+/* pages/team/team.wxss */
+/* table切换样式 */
+.smallTitle{
+  margin: 0.35em 0;
+}
+.smallTitle view.titleItem{
+  font-size: 1em;
+  color: #626262;
+  border: 1px solid #c4c4c4;
+  border-radius: .35em;
+  padding: 0.2em 0;
+}
+.smallTitle view.border-tottom{
+  border: 1px solid #d90f09;
+  color: #fff;
+}
+.tab-content {
+  min-height: 15em;
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+
+/*==============================*/
+page{
+  background-color: #fff;
+}
+.team{
+  padding: 2%;
+}
+.team .tab-title{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  top: 0;
+  margin: 0;
+  padding: 0.75em;
+  box-sizing: border-box;
+}
+.tab-content{
+  margin-top:3em ;
+}
+.team .tab-title .titleItem{
+  flex: 1;
+  text-align: center;
+  margin: 0 0.5%;
+  border-radius: 0;
+}
+.team .smallTitle view.border-tottom{
+  background-color: #d90f09 !important;
+  color: #fff !important;
+}
+.teamConTop image{
+  width: 6em;
+  height: 6em;
+  float: left;
+  border-radius: 50%;
+}
+.teamConTopRight{
+  float: left;
+  padding: 0.5em 1em;
+}
+.teamConTopRight .name{
+  margin-bottom: 1em;
+}
+.teamConTopRight .p{
+  font-size: 0.95em;
+  color: #7a7a7a;
+}
+.describe{
+  font-size: 0.85em;
+  margin: 1em 0;
+  color: #7a7a7a;
+  text-align: justify;
+  line-height: 1.75;
+}
+.teamConli {
+  padding: 1em 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+

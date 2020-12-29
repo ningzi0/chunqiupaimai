@@ -1,0 +1,40 @@
+<!--pages/help/help.wxml-->
+<view class="help">
+    <view class="helpCon">
+        <ul>
+          <block wx:for="{{helpArray}}">
+              <li>
+                  <navigator url="/pages/helpshow/helpshow">
+                      <image src="{{item.imgSrc}}"></image>
+                      <text>{{item.text}}</text>
+                      <image class="rightarr" src="/images/icon/right_arr.png"></image>
+                  </navigator>
+              </li>
+          </block>
+        </ul>
+    </view>
+
+
+    <view class="serviceWrap">
+        <button class="service" open-type="contact" bindcontact="handleContact">
+            <image src="/images/icon/service.png"></image>
+            <text>在线客服</text>
+        </button>
+    </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

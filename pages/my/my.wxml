@@ -1,0 +1,137 @@
+<view class="my">
+    <view class="myTitle">
+        <view class="myheader">
+            <image src="/images/header.jpg" mode="aspectFill"></image>
+            <text>蜡笔小新</text>
+        </view>
+
+        <view class="mytable">
+            <view class="mytableTitle">我的拍卖</view>
+            <view class="mytableUl">
+                <block wx:for="{{mytableArray}}">
+                    <view class="mytableLi">
+                        <navigator url="/pages/order/order">
+                            <image src="{{item.imageSrc}}"></image>
+                            <text>{{item.mytableText}}</text>
+                        </navigator>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+
+    <view class="myContent">
+        <!-- 我的列表 -->
+        <view class="mylist">
+            <block wx:for="{{mylistArray}}">
+                <view class="mylistLi">
+                    <navigator class="clearfix" url="{{item.url}}">
+                        <text class="mylistTitle">{{item.mylistTitle}}</text>
+                        <text class="see">查看</text>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+
+        <!-- 我的工具 -->
+        <view class="tool">
+            <view class="toolTitle">我的工具</view>
+            <view class="toolList">
+                <block wx:for="{{toolArray}}">
+                    <view class="toolLi">
+                        <navigator url="{{item.url}}" open-type='{{item.switchTab}}'>
+                            <image src="{{item.toolimgSrc}}"></image>
+                            <text>{{item.toolLiText}}</text>
+                        </navigator>
+                    </view>
+                </block>
+                <view class="toolLi" >
+                    <button class="navigator" open-type="contact" bindcontact="handleContact">
+                        <image src="/images/icon/mytool8.png"></image>
+                        <text>在线客服</text>
+                    </button>
+                </view>
+            </view>
+        </view>
+
+        <!-- 为您推荐 -->
+        <view class="recommend">
+            <view class="recommendTit">
+                <text class="line"></text>
+                <text class="text">为您推荐</text>
+                <text class="line"></text>
+            </view>
+
+            <view class="tab-content">
+                <view class="ul">
+                    <block wx:for="{{beforeArray}}">
+                        <view class="li">
+                            <navigator url="/pages/simulation/simulation">
+                                <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                                <view class="tabCon">
+                                    <view class="t_ctit">{{item.t_ctit}}</view>
+                                    <view class="tabinfo">
+                                        <view class="tabinfoItem">
+                                            <text class="tabinfoItemTit">当前价</text>
+                                            <text class="tabinfoPrice">{{item.tabinfoPrice}}</text>
+                                        </view>
+                                        <view class="tabinfoItem">
+                                            <text class="tabinfoItemTit">评估价</text>
+                                            <text class="tabinfo_price">￥{{item.tabinfo_price}}</text>
+                                        </view>
+                                        <view class="tabinfoItem">
+                                            <text class="tabinfoItemTit">时间</text>
+                                            <text class="tabinfo_price"><text class="b">{{item.tabinfo_time}}</text></text>
+                                        </view>
+                                    </view>
+                                    <view class="tabinfoBtnWrap clearfix">
+                                        <view class="tabinfoBtn">即将开始</view>
+                                    </view>
+                                    <view class="tabinfoBottom">
+                                        <view class="tabinfoB_item"><text class="b">{{item.tabinfo_number}}</text>次围观</view>
+                                        <view class="tabinfoB_item"><text class="b">{{item.tabinfo_number2}}</text>人报名</view>
+                                    </view>
+                                </view>
+                            </navigator>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+
+
+
+    </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

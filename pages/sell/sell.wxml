@@ -1,0 +1,21 @@
+<!--pages/sell/sell.wxml-->
+<view class="sell">
+    <image src="/images/icon/sell.png" ></image>
+    <view class="p">请联系春秋拍卖线下工作人员，谢谢</view>
+    <button>客服电话</button>
+    <button>在线客服</button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+/* pages/assets/assets.wxss */
+.tabLayer{
+  top: 730rpx;
+  padding-top: 10px;
+}
+
+
+
+

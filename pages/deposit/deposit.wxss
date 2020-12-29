@@ -1,0 +1,68 @@
+/* pages/deposit/deposit.wxss */
+.depositCon .item{
+  background: #fff;
+  margin: 0.35em;
+  padding: 0.5em;
+}
+.depositCon .item image{
+  width: 6em;
+  height: 6em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.depositext{
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+.depositit{
+  font-size: 0.9em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 0.35em;
+}
+.depositags text{
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+}
+.depositags text.tags{
+  display: inline-block;
+  background-color: #d90f09;
+  color: #fff;
+  padding: 0.35em 1.5em;
+  font-size: 0.85em;
+  margin-top: 0.35em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
