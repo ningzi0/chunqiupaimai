@@ -1,0 +1,85 @@
+/* pages/order/order.wxss */
+/* table切换样式 */
+.smallTitle{
+  margin: 0.35em 0;
+}
+.smallTitle view.titleItem{
+  font-size: 1em;
+  color: #626262;
+  border: 1px solid #c4c4c4;
+  border-radius: .35em;
+  padding: 0.2em 0;
+}
+.smallTitle view.border-tottom{
+  border: 1px solid #d90f09;
+  color: #fff;
+}
+.tab-content {
+  min-height: 15em;
+  margin-top: 3.3em;
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+.tab-title{
+  display: flex;
+  background: #fff;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.tab-title .titleItem{
+  flex: 1;
+  text-align: center;
+  border-radius: 0 !important;
+  border: 0 !important;
+  font-size: 0.9em !important;
+  color: #222 !important;
+  padding: 0.85em 0 !important;
+}
+.smallTitle view.border-tottom{
+  color: #d90f09 !important;
+  border-bottom: 4px solid #d90f09 !important;
+}
+
+
+
+
+
+/*空状态*/
+.empty{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.emptyContent {
+  text-align: center;
+}
+.emptyContent image{
+  width: 5em;
+  height: 5em;
+  display: block;
+  margin: 0 auto;
+}
+.emptyContent text{
+  font-size: 0.9em;
+  color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+

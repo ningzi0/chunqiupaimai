@@ -79,16 +79,28 @@
     <!-- 拍卖师发言 -->
     <view bindtap="clickme" class="pms_message">
         <image src="/images/icon/message.png"></image>
-        <text>拍卖师发言</text>
+        <text>拍卖师留言</text>
     </view>  
  
     <!--屏幕背景变暗的背景  -->
     <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
     <!--弹出框  -->
     <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
-        <view class="title">拍卖师发言</view>
+        <view class="title">拍卖师留言</view>
         <view class="commodityContent">
-            <view class="no">暂无拍卖师发言</view>
+            <view class="ul">
+                <view class="li">
+                    <view class="commodityCon">
+                        <text>此处为拍卖师对拍卖标的的介绍或其他留言，此处为拍卖师对拍卖标的的介绍或其他留言</text>
+                        <text class="del">删除</text>
+                    </view>
+                </view>
+            </view>
+            <view class="no">暂无拍卖师留言</view>
+            <view class="publish">
+                <input type="text" placeholder="请输入拍卖师留言内容" />
+                <view class="publishBtn">发送</view>
+            </view>
         </view>
     </view>
 

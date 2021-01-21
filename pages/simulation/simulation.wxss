@@ -134,7 +134,7 @@
 }
 /*对话框 */
 .commodity_attr_box {
-  height: 500rpx;
+  height: 20em;
   width: 100%;
   overflow: hidden;
   position: fixed;
@@ -180,8 +180,40 @@
   color: #929294;
 }
 
-
-
-
+.publish{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.85em;
+  padding: 0.75em;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.publish input{
+  display: inline-block;
+  width:80%;
+  vertical-align: middle;
+}
+.publishBtn{
+  width: 15%;
+  display: inline-block;
+  background-color: #d90f09;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.35em 0;
+}
+.commodityContent .ul{
+  padding: 0.5em;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+.commodityContent .ul .li .del{
+  background-color: #b3b3b3;
+  color: #fff;
+  padding: 0 0.75em;
+  display: inline-block;
+  margin-left: 0.5em;
+}
 
 

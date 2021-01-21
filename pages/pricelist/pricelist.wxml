@@ -6,10 +6,6 @@
             </swiper-item>  
         </block>
     </swiper>
-    <view class="banner_tag">
-        <view class="b_tagItem flex1">拍卖进行中</view>
-        <view class="b_tagItem flex2">12月24日 10:10:00 结束</view>
-    </view>
 </view>
 
 
@@ -27,15 +23,17 @@
             <view class="detail-shoucang" style="background-color:{{BgColor}}" bindtap='shoucang'><text class="detail-shoucang.text">{{shoucang}}</text></view>
         </view>
     </view>
-    <view class="tips">
-        <text>499次围观</text>
-        <text>258人模拟</text>
-    </view>
 </view>
 
 
 <!-- 出价窗口 -->
 <view class="offer">
+  
+  <view class="offerLi myoffer">
+        <image src="/images/header.jpg" mode="aspectFill"></image>
+        <text class="offerCon">已出价:125,6360元</text>
+        <text class="dateTime">2020/12/01 12:21:28</text>
+    </view>
     <block wx:for="{{offerArray}}">
         <view class="offerLi">
             <image src="{{item.imgSrc}}" mode="aspectFill"></image>
@@ -43,37 +41,14 @@
             <text class="dateTime">{{item.dateTime}}</text>
         </view>
     </block>
-    <view class="offerLi myoffer">
-        <text class="dateTime">2020/12/01 12:21:28</text>
-        <text class="offerCon">已出价:125,6360元</text>
-        <image src="/images/header.jpg" mode="aspectFill"></image>
-    </view>
 </view>
 
-<!-- 
-<navigator class="nav_btn">
-    <view class="btn">我要出价</view>
-</navigator> -->
 
-
-
-<view class="inputprice">
-    <view class="slider">
-        <view class="body-view">
-            <view class="text">
-                <text>最小值5</text>
-                <text>最大值200（单位：万）</text>
-            </view>
-            <slider min="5" max="200" show-value/>
-        </view>
-        <view class="inputp">
-            <input type="number" placeholder="输入单次出价金额"/><text>单位：万</text>
-        </view>
-        <view class="btn">
-            <view class="inputbtn">出价</view>
-        </view>
-    </view>
+<view class="input">
+  <input type="text" placeholder="输入点什么..."/>
+  <view class="btn">发送</view>
 </view>
+
 
 
 

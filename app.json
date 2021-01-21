@@ -16,6 +16,8 @@
     "pages/deposit/deposit",
     "pages/info/info",
     "pages/sell/sell",
+    "pages/admin/admin",
+    "pages/pricelist/pricelist",
     "pages/logs/logs"
   ],
   "window":{

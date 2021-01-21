@@ -178,6 +178,21 @@
           "id": -1,
           "name": "我要出售",
           "pathName": "pages/sell/sell",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "管理拍卖",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "出价列表",
+          "pathName": "pages/pricelist/pricelist",
+          "query": "",
           "scene": null
         }
       ]

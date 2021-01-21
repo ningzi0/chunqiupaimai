@@ -1,8 +1,9 @@
+/* pages/pricelist/pricelist.wxss */
 .offer{
   background-color: #f9f9f9;
   min-height: 15em;
-  max-height: 30em;
-  margin: 0.35em 0.35em 10em;
+  max-height: 25em;
+  margin: 0.35em 0.35em 4em;
   overflow-y: scroll;
   padding: 0.5em 0;
 }
@@ -31,51 +32,58 @@
   font-size: 0.75em;
   color: #ddd;
 }
-.myoffer{
-  text-align: right;
-}
 .myoffer text.offerCon{
   background-color: #d90f09;
   color: #fff;
 }
-.inputprice{
+
+.textarea textarea ,.textarea input{
   background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 95%;
-  left:0;
-  padding: 0.5em;
-  box-shadow: 0 0 0.5em rgba(0,0,0,0.2);
-}
-.body-view .text{
   font-size: 0.85em;
-  display: flex;
-}
-.body-view .text text{
-  flex: 1;
-}
-.body-view .text text:last-child{
-  text-align: right;
-}
-.inputp input{
+  height: 5em;
+  padding: 0.5em;
+  margin:0.5em;
   display: inline-block;
+  box-sizing: border-box;
   width: 80%;
-  background-color: #fafafa;
-  padding: 0.5em;
-  margin: 0.5em 0;
-  font-size: 0.85em;
   vertical-align: middle;
 }
-.inputp text{
-  font-size: 0.85em;
+.textarea .button{
+  width: 15%;
+  height: 4.35em;
   display: inline-block;
-  vertical-align: middle;
-}
-.inputbtn{
   background-color: #d90f09;
   color: #fff;
+  vertical-align: middle;
+  padding: 0.5em;
+  box-sizing: border-box;
+  line-height: 3em;
   text-align: center;
-  padding: 0.75em 0;
 }
 
+.input{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.35em;
+}
+.input input{
+  font-size: 0.8em;
+  padding: 0.65em;
+  background-color: #f0f0f0;
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.input .btn{
+  background-color: #d90f09;
+  color: #fff;
+  width: 18%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em 0;
+}
 
