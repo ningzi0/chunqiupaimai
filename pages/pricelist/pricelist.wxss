@@ -87,3 +87,21 @@
   padding: 0.5em 0;
 }
 
+.inputbtn{
+  display: flex;
+}
+.inputbtn .button{
+  flex: 1;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0.5em 0;
+  background-color: #fafafa;
+  margin: 0.25em 0 0;
+}
+.inputbtn .button.start{
+  background-color: #d90f09;
+  color: #fff;
+}
+
+
+
