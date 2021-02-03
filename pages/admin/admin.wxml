@@ -22,7 +22,7 @@
                           </view>
                       </navigator>
                       <view class="btn">
-                          <button>{{item.btn}}</button>
+                        <navigator url="/pages/pricelist/pricelist">{{item.btn}}</navigator>
                       </view>
                   </li>
               </block>
@@ -46,7 +46,7 @@
                           </view>
                       </navigator>
                       <view class="btn">
-                          <button>{{item.btn}}</button>
+                          <navigator url="/pages/pricelist/pricelist">{{item.btn}}</navigator>
                       </view>
                   </li>
               </block>
@@ -70,7 +70,7 @@
                           </view>
                       </navigator>
                       <view class="btn">
-                          <button>{{item.btn}}</button>
+                        <navigator url="/pages/pricelist/pricelist">{{item.btn}}</navigator>
                       </view>
                   </li>
               </block>

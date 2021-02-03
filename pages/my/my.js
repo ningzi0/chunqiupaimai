@@ -32,6 +32,10 @@ Page({
     {
       mylistTitle:'我要出售',
       url:'/pages/sell/sell'
+    },
+    {
+      mylistTitle:'管理拍卖',
+      url:'/pages/admin/admin'
     }],
     toolArray:[{
       toolimgSrc:'/images/icon/mytool1.png',
