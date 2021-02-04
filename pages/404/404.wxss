@@ -1,0 +1,14 @@
+/* pages/404/404.wxss */
+.err{
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0,-50%);
+  width: 100%;
+  text-align: center;
+  color: #999;
+}
+.err image{
+  width: 12em;
+  height: 12em;
+}

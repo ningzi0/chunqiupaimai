@@ -1,0 +1,5 @@
+<!--pages/404/404.wxml-->
+<view class="err">
+  <image src="/images/icon/404.png"></image>
+  <view class="p">抱歉，未找到该页面</view>
+</view>

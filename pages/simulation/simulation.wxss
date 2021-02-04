@@ -179,6 +179,33 @@
   font-size: 0.85em;
   color: #929294;
 }
+.commodityContent .ul .li{
+  border-bottom: 1px solid #eee;
+}
+.commodityContent .ul .li .commodityCon .text{
+  float: left;
+  padding: 0.25em 0;
+}
+.commodityContent .ul .li .commodityCon .delCon{
+  float: right;
+  padding: 0.25em 0;
+}
+.commodityContent .ul .li .commodityCon .timeCon{
+  font-size: 0.85em;
+  color: #999;
+  text-align: center;
+}
+.timeCon .time{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5em;
+}
+.timeCon .line{
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 1px solid #eee;
+  width: 5em;
+}
 
 .publish{
   position: absolute;

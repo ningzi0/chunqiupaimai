@@ -201,6 +201,13 @@
           "pathName": "pages/bindphone/bindphone",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "404",
+          "pathName": "pages/404/404",
+          "query": "",
+          "scene": null
         }
       ]
     }

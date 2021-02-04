@@ -90,9 +90,16 @@
         <view class="commodityContent">
             <view class="ul">
                 <view class="li">
-                    <view class="commodityCon">
-                        <text>此处为拍卖师对拍卖标的的介绍或其他留言，此处为拍卖师对拍卖标的的介绍或其他留言</text>
-                        <text class="del">删除</text>
+                    <view class="commodityCon clearfix">
+                        <view class="timeCon">
+                            <text class="line"></text>
+                            <text class="time">2021/02/04</text>
+                            <text class="line"></text>
+                        </view>
+                        <text class="text">此处为拍卖师对拍卖标的的介绍或其他留言，此处为拍卖师对拍卖标的的介绍或其他留言</text>
+                        <view class="delCon">
+                            <text class="del">删除</text>
+                        </view>
                     </view>
                 </view>
             </view>
