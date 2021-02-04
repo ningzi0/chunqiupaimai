@@ -18,6 +18,7 @@
     "pages/sell/sell",
     "pages/admin/admin",
     "pages/pricelist/pricelist",
+    "pages/bindphone/bindphone",
     "pages/logs/logs"
   ],
   "window":{

@@ -194,6 +194,13 @@
           "pathName": "pages/pricelist/pricelist",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "绑定手机",
+          "pathName": "pages/bindphone/bindphone",
+          "query": "",
+          "scene": null
         }
       ]
     }
