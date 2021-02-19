@@ -15,7 +15,7 @@
     <view class="price clearfix">
         <view class="current">
             <text class="currentTit">当前价：</text>
-            <text class="currentPrice">1547,336</text>
+            <input class="currentPrice" type="text" value="1547,336" focus="{{inputShowed}}"/>
             <text class="currentSmall">元</text>
         </view>
         <view class="number">
@@ -30,17 +30,21 @@
 <view class="offer">
   
   <view class="offerLi myoffer">
-        <image src="/images/header.jpg" mode="aspectFill"></image>
+        <text class="number">NH005</text>
         <text class="offerCon">已出价:125,6360元</text>
         <text class="dateTime">2020/12/01 12:21:28</text>
     </view>
     <block wx:for="{{offerArray}}">
         <view class="offerLi">
-            <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+            <text class="number">{{item.number}}</text>
+            <!-- <image src="{{item.imgSrc}}" mode="aspectFill"></image> -->
             <text class="offerCon">已出价:{{item.offerCon}}元</text>
             <text class="dateTime">{{item.dateTime}}</text>
         </view>
     </block>
+    <view class="explain">
+        <text>此处为拍卖师说明内容</text>
+    </view>
 </view>
 
 

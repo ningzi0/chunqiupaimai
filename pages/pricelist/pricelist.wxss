@@ -3,19 +3,21 @@
   background-color: #f9f9f9;
   min-height: 15em;
   max-height: 25em;
-  margin: 0.35em 0.35em 4em;
+  margin: 0.35em 0.35em 6em;
   overflow-y: scroll;
   padding: 0.5em 0;
 }
 .offerLi{
   padding: 0.75em;
 }
-.offerLi image{
+.offerLi .number{
   width: 3em;
   height: 3em;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+  float: none;
+  line-height: 3em;
 }
 .offerLi text{
   display: inline-block;
@@ -103,5 +105,13 @@
   color: #fff;
 }
 
-
-
+.explain{
+  text-align: center;
+  font-size: 0.85em;
+  padding: 1.5em 0;
+  border-top:1px solid #eee ;
+}
+.currentPrice{
+  display: inline-block;
+  width: 5em;
+}

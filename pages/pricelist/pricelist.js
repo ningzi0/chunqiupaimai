@@ -7,31 +7,32 @@ Page({
   data: {
     BgColor: '#ff7315',
     shoucang:"改价",
+    inputShowed:false,
     movies:[  
       {url:'/images/house.jpg'} 
     ] ,
     offerArray:[{
-      imgSrc:'/images/header.jpg',
+      number:'NH001',
       offerCon:'125,6360',
       dateTime:'2020/12/01 12:21:28'
     },{
-      imgSrc:'/images/header.jpg',
+      number:'NH002',
       offerCon:'125,6360',
       dateTime:'2020/12/01 12:21:28'
     },{
-      imgSrc:'/images/header.jpg',
+      number:'NH003',
       offerCon:'125,6360',
       dateTime:'2020/12/01 12:21:28'
     },{
-      imgSrc:'/images/header.jpg',
+      number:'NH004',
       offerCon:'125,6360',
       dateTime:'2020/12/01 12:21:28'
     },{
-      imgSrc:'/images/header.jpg',
+      number:'NH006',
       offerCon:'125,6360',
       dateTime:'2020/12/01 12:21:28'
     },{
-      imgSrc:'/images/header.jpg',
+      number:'NH008',
       offerCon:'125,6360',
       dateTime:'2020/12/01 12:21:28'
     }]
@@ -42,6 +43,11 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  shoucang:function(){
+    this.setData({
+      inputShowed:true
+    })
   },
 
   /**
