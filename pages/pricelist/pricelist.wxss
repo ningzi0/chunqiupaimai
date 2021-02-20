@@ -111,7 +111,33 @@
   padding: 1.5em 0;
   border-top:1px solid #eee ;
 }
+
+.current .currentPriceinput{
+  display: inline-block;
+}
 .currentPrice{
   display: inline-block;
-  width: 5em;
+  vertical-align: middle;
+  max-width: 5em;
+}
+.current text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.heightprice{
+  font-size: 0.85em;
+  padding:0 0.5em 1em;
+  padding-top: 1em;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.heightprice .heightPricenum {
+  font-size: 1.1em;
+  color: #d90f09;
+  font-weight: bold;
 }
