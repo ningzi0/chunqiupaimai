@@ -256,12 +256,21 @@
   padding: 0.35em;
   border: 1px solid #eee;
   margin-left: 0.5em;
-  height: 5.7em;
+  height: 8.7em;
   overflow: hidden;
   display: inline-block;
+  line-height: 1.5;
 }
 .simulationTitItem.active{
   border:1px solid #d90f09;
+}
+
+.simulationTitItem text{
+  display: block;
+  text-align: center;
+  padding: 0.5em 0;
+  background: #eee;
+  margin-bottom: 0.35em;
 }
 
 
@@ -357,7 +366,9 @@
   overflow-y: scroll;
 }
 
-
+.offer{
+  margin-bottom: 1em;
+}
 
 
 

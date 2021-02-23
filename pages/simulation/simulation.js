@@ -17,6 +17,31 @@ Page({
       {url:'/images/house.jpg'} ,  
       {url:'/images/house.jpg'}   
     ] ,
+    offerArray:[{
+      imgSrc:'/images/header.jpg',
+      offerCon:'125,6360',
+      dateTime:'2020/12/01 12:21:28'
+    },{
+      imgSrc:'/images/header.jpg',
+      offerCon:'125,6360',
+      dateTime:'2020/12/01 12:21:28'
+    },{
+      imgSrc:'/images/header.jpg',
+      offerCon:'125,6360',
+      dateTime:'2020/12/01 12:21:28'
+    },{
+      imgSrc:'/images/header.jpg',
+      offerCon:'125,6360',
+      dateTime:'2020/12/01 12:21:28'
+    },{
+      imgSrc:'/images/header.jpg',
+      offerCon:'125,6360',
+      dateTime:'2020/12/01 12:21:28'
+    },{
+      imgSrc:'/images/header.jpg',
+      offerCon:'125,6360',
+      dateTime:'2020/12/01 12:21:28'
+    }],
     selected1: true,
     selected2: false,
     selected3:false,

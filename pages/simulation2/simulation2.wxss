@@ -1,43 +1,4 @@
-.offer{
-  background-color: #f9f9f9;
-  min-height: 15em;
-  max-height: 30em;
-  margin: 0.35em 0.35em 10em;
-  overflow-y: scroll;
-  padding: 0.5em 0;
-}
-.offerLi{
-  padding: 0.75em;
-}
-.offerLi image{
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-}
-.offerLi text{
-  display: inline-block;
-  vertical-align: middle;
-}
-.offerLi text.offerCon{
-  background-color: #fff;
-  padding:1em;
-  font-size: 0.85em;
-  margin: 0.5em;
-  box-shadow: 0 0 1em rgba(0,0,0,0.05);
-}
-.offerLi text.dateTime{
-  font-size: 0.75em;
-  color: #ddd;
-}
-.myoffer{
-  text-align: right;
-}
-.myoffer text.offerCon{
-  background-color: #d90f09;
-  color: #fff;
-}
+
 .inputprice{
   background-color: #fff;
   position: fixed;
