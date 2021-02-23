@@ -7,6 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    hiddenn:true,
+    _num:1,
     BgColor: '#ff7315',
     shoucang:"收藏",
     movies:[  
@@ -19,6 +21,39 @@ Page({
     selected2: false,
     selected3:false,
     selected4:false,
+    onlineArray:[{
+      number:'NB1001',
+      tags:'在线',
+      className:'onlineTags'
+    },{
+      number:'NB1003',
+      tags:'在线',
+      className:'onlineTags'
+    },{
+      number:'NB1004',
+      tags:'在线',
+      className:'onlineTags'
+    },{
+      number:'NB1005',
+      tags:'在线',
+      className:'onlineTags'
+    },{
+      number:'NB1006',
+      tags:'在线',
+      className:'onlineTags'
+    },{
+      number:'NB1007',
+      tags:'在线',
+      className:'onlineTags'
+    },{
+      number:'NB1008',
+      tags:'在线',
+      className:'onlineTags'
+    },{
+      number:'NB1002',
+      tags:'离线',
+      className:'offlineTags'
+    }]
   },
   selected1: function (e) {
     this.data.selected1 = true;
@@ -47,6 +82,21 @@ Page({
     this.data.selected3 = false;
     this.data.selected4 = true;
     $digest(this)
+  },
+  onlineClickShow:function(){
+    this.setData({
+      hiddenn:false,
+    })
+  },
+  onlineClickHidden:function(){
+    this.setData({
+      hiddenn:true,
+    })
+  },
+  menuClick:function(e){
+    this.setData({
+      _num:e.target.dataset.num
+    })
   },
   /**
    * 生命周期函数--监听页面加载

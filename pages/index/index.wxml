@@ -267,6 +267,24 @@
 
 
 
+<!-- 直播讲解 -->
+<view class="live">
+    <navigator url="/pages/live/live">
+        <view class="liveIco">
+            <text class="text1"></text>
+            <text class="text2"></text>
+            <text class="text3"></text>
+        </view>
+        <view class="liveText">
+            <text>直播讲解</text>
+        </view>
+    </navigator>
+</view>
+
+
+
+
+
 
 
 

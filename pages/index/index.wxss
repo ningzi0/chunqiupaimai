@@ -363,11 +363,25 @@ page{
   height: 100%;
 }
 
-
-
-
-
-
+/* 直播讲解 */
+.live{
+  position: fixed;
+  bottom: 20%;
+  right:0.5em;
+  background: rgba(255,255,255,0.9);
+  font-size: 0.75em;
+  z-index: 99999;
+  font-weight: bold;
+  border: 1px solid #eee;
+  border-radius: 0.5em;
+}
+.live navigator{
+  padding: 0.75em 0.25em;
+}
+.liveText{
+  padding: 0.45em 0 0;
+}
+ 
 
 
 

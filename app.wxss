@@ -504,7 +504,50 @@ page{
 
 
 
+/* 直播讲解图标动效 */
+.liveIco{
+  width: 2em;
+  height: 2em;
+  background: #f75283;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.2em;
+}
 
+.liveIco text{
+  display: inline-block;
+  width: 4px;
+  background: #fff;
+  height: 20%;
+  margin: 0 0.1em;
+  border-radius: 1em;
+}
+
+@keyframes myfirst
+{
+  from    {height: 20%;}
+  to {height: 50%;}
+}
+
+
+.liveIco text.text1{
+  animation:myfirst 0.7s ease;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+}
+.liveIco text.text2{
+  animation:myfirst 0.7s ease;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+  animation-delay:0.6s;
+}
+.liveIco text.text3{
+  animation:myfirst 0.7s ease;
+  animation-direction:alternate;
+  animation-iteration-count:infinite;
+  animation-delay:0.9s;
+}
 
 
 

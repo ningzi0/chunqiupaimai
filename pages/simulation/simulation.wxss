@@ -243,4 +243,132 @@
   margin-left: 0.5em;
 }
 
+.simulationTit{
+  overflow-x: scroll;
+}
+.simulationTitWrap{
+  padding: 0.5em 0 0;
+  width: 170%;
+}
+.simulationTitItem{
+  width: 10em;
+  font-size: 0.8em;
+  padding: 0.35em;
+  border: 1px solid #eee;
+  margin-left: 0.5em;
+  height: 5.7em;
+  overflow: hidden;
+  display: inline-block;
+}
+.simulationTitItem.active{
+  border:1px solid #d90f09;
+}
+
+
+
+
+/* 在线人数 */
+.onlinePeople{
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 0.7em;
+  padding: 0.15em 0.75em 0.3em;
+  border-radius: 5em;
+  z-index: 99999;
+}
+.onlinePeople image{
+  width:1.3em;
+  height: 1.3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.onlinePeople text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.onlineContent{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+  z-index: 99998;
+}
+.onlineConMask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99998;
+  background: rgba(0,0,0,0.7);
+}
+.onlineCon{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 60%;
+  background: #fff;
+  z-index: 99999;
+}
+.onlineTable{
+  display: flex;
+}
+.onlineTable text{
+  flex: 1;
+  text-align: center;
+  padding: 0.75em 0;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  font-size: 0.85em;
+}
+.onlineConItem {
+  display: flex;
+  padding: 0.35em 0;
+  border-bottom: 1px solid #eee;
+}
+.onlineConItem text{
+  flex: 1;
+  text-align: center;
+  font-size: 0.85em;
+  padding: 0.75em 0;
+}
+.onlineConItem text.tags text{
+  color: #fff;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+}
+.onlineConItem text.dial text{
+  background: rgb(255, 153, 0);
+  color: #fff;
+  padding: 0.75em 1em;
+}
+.onlineTags text{
+  background: #07ac30;
+}
+.offlineTags text{
+  background: #8d8d8d;
+}
+.onlineUl{
+  height: 89%;
+  overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

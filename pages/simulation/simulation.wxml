@@ -12,10 +12,47 @@
     </view>
 </view>
 
+<!-- 在线人数 -->
+<view class="onlinePeople" bindtap="onlineClickShow">
+    <image src="/images/icon/ren.png"></image>
+    <text>276,253</text>
+</view>
+<!-- 在线人数详情 -->
+<view class="onlineContent" hidden="{{hiddenn}}">
+    <view class="onlineConMask" bindtap="onlineClickHidden"></view>
+    <view class="onlineCon">
+        <view class="onlineTable">
+            <text>编号</text>
+            <text>状态</text>
+            <text>联系</text>
+        </view>
+        <view class="onlineUl">
+            <block wx:for="{{onlineArray}}">
+                <view class="onlineConItem">
+                    <text>{{item.number}}</text>
+                    <text class="tags {{item.className}}"><text>{{item.tags}}</text></text>
+                    <text class="dial"><text>拨打电话</text></text>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+
+
+
 
 <!-- 标题价格 -->
 <view class="simulationTitle">
-    <view class="title">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
+    <view class="simulationTit">
+        <view class="simulationTitWrap">
+            <view class="simulationTitItem {{_num==1?'active':''}}" data-num="1" bindtap="menuClick">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
+            <view class="simulationTitItem {{_num==2?'active':''}}" data-num="2" bindtap="menuClick">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
+            <view class="simulationTitItem {{_num==3?'active':''}}" data-num="3" bindtap="menuClick">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
+            <view class="simulationTitItem {{_num==4?'active':''}}" data-num="4" bindtap="menuClick">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
+        </view>
+    </view>
+
+    <!-- <view class="title">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view> -->
     <view class="price clearfix">
         <view class="current">
             <text class="currentTit">当前价：</text>

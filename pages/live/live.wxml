@@ -1,0 +1,83 @@
+<!--pages/live/live.wxml-->
+<view class="liveTop">
+    <view class="liveCc">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            直播专场：{{array[index]}}
+          </view>
+        </picker>
+    </view>
+
+    <view class="liveSearch">
+        <image src="/images/icon/search_ico.png"></image>
+        <input type="text" confirm-type="search" />
+    </view>
+
+</view>
+
+
+<view class="liveList">
+    <view class="li">
+      <navigator url="/pages/simulation/simulation">
+        <view class="livelistIco">
+          <view class="liveIco">
+            <text class="text1"></text>
+            <text class="text2"></text>
+            <text class="text3"></text>
+          </view>
+          <view class="liveListText">7371人参拍</view>
+        </view>
+        <image src="/images/house2.jpg" mode="aspectFill"></image>
+        <view class="text">贵阳专场</view>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator url="/pages/simulation/simulation">
+        <view class="livelistIco">
+            <view class="liveIco">
+              <text class="text1"></text>
+              <text class="text2"></text>
+              <text class="text3"></text>
+            </view>
+            <view class="liveListText">7371人参拍</view>
+          </view>
+          <image src="/images/house3.jpg" mode="aspectFill"></image>
+        <view class="text">遵义专场</view>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator url="/pages/simulation/simulation">
+        <view class="livelistIco">
+            <view class="liveIco">
+              <text class="text1"></text>
+              <text class="text2"></text>
+              <text class="text3"></text>
+            </view>
+            <view class="liveListText">7371人参拍</view>
+          </view>
+          <image src="/images/car.jpg" mode="aspectFill"></image>
+        <view class="text">安顺专场</view>
+      </navigator>
+    </view>
+    <view class="li">
+      <navigator url="/pages/simulation/simulation">
+        <view class="livelistIco">
+            <view class="liveIco">
+              <text class="text1"></text>
+              <text class="text2"></text>
+              <text class="text3"></text>
+            </view>
+            <view class="liveListText">7371人参拍</view>
+          </view>
+          <image src="/images/house.jpg" mode="aspectFill"></image>
+        <view class="text">都匀专场</view>
+      </navigator>
+    </view>
+</view>
+
+
+
+
+
+
+

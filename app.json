@@ -20,6 +20,7 @@
     "pages/pricelist/pricelist",
     "pages/bindphone/bindphone",
     "pages/404/404",
+    "pages/live/live",
     "pages/logs/logs"
   ],
   "window":{

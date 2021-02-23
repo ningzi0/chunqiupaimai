@@ -1,0 +1,76 @@
+/* pages/live/live.wxss */
+.liveTop{
+  background: #fff;
+  padding:1em 0.85em ;
+  font-size: 0.85em;
+}
+
+.liveSearch,.liveCc{
+  display: inline-block;
+  width: 49%;
+  vertical-align: middle;
+}
+.liveSearch{
+  position: relative;
+}
+.liveSearch input{
+  border: 1px solid #eee;
+  border-radius: 2em;
+  padding: 0.25em 0.5em 0.25em 1.85em;
+}
+.liveSearch image{
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(0,-50%);
+}
+
+.liveList{
+  text-align: center;
+}
+.liveList .li{
+  display: inline-block;
+  width: 49%;
+  margin: 1% 0.3%;
+  background: #fff;
+  position: relative;
+}
+.liveList .li image{
+  width: 100%;
+}
+.liveList .li .text{
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 0.35em;
+}
+
+
+.livelistIco{
+  position: absolute;
+  left: 0.35em;
+  top: 0.35em;
+  background: rgba(0,0,0,0.3);
+  border-radius: 5em;
+}
+.livelistIco .liveIco{
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.3em;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+}
+.liveListText{
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 0.7em;
+  float: left;
+  padding: 0.2em 0.75em 0 0.35em;
+}
+.livelistIco .liveIco text{
+  width: 3px;
+  margin: 0 0.06em;
+}
