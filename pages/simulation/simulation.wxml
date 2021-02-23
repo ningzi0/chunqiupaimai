@@ -286,9 +286,32 @@
             </view>
         </view>
 
-        <navigator class="nav_btn" url="/pages/simulation2/simulation2">
+
+
+
+        <view class="inputprice">
+            <view class="slider">
+                <view class="body-view">
+                    <view class="text">
+                        <text>最小值5</text>
+                        <text>最大值200（单位：万）</text>
+                    </view>
+                    <slider min="5" max="200" show-value/>
+                </view>
+                <view class="inputp">
+                    <input type="number" placeholder="输入单次出价金额"/><text>单位：万</text>
+                </view>
+                <view class="btn">
+                    <view class="inputbtn">出价</view>
+                </view>
+            </view>
+        </view>
+
+
+
+        <!-- <navigator class="nav_btn" url="/pages/simulation2/simulation2">
             <view class="btn">参与竞拍</view>
-        </navigator>
+        </navigator> -->
 
     </view>
 

@@ -3,6 +3,7 @@
 
 .simulationContent{
   background-color: #fff;
+  margin-bottom: 11em;
 }
 .recordTit{
   font-size: 1.1em;
@@ -376,6 +377,45 @@
 
 
 
+.inputprice{
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 95%;
+  left:0;
+  padding: 0.5em;
+  box-shadow: 0 0 0.5em rgba(0,0,0,0.2);
+}
+.body-view .text{
+  font-size: 0.85em;
+  display: flex;
+}
+.body-view .text text{
+  flex: 1;
+}
+.body-view .text text:last-child{
+  text-align: right;
+}
+.inputp input{
+  display: inline-block;
+  width: 80%;
+  background-color: #fafafa;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  vertical-align: middle;
+}
+.inputp text{
+  font-size: 0.85em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.inputbtn{
+  background-color: #d90f09;
+  color: #fff;
+  text-align: center;
+  padding: 0.75em 0;
+}
 
 
 
