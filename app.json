@@ -21,6 +21,11 @@
     "pages/bindphone/bindphone",
     "pages/404/404",
     "pages/live/live",
+    "pages/apply/apply",
+    "pages/peoplelist/peoplelist",
+    "pages/Fieldlist/Fieldlist",
+    "pages/addField/addField",
+    "pages/addbiaodi/addbiaodi",
     "pages/logs/logs"
   ],
   "window":{

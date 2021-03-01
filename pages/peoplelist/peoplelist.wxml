@@ -1,0 +1,49 @@
+<!--pages/peoplelist/peoplelist.wxml-->
+<view class="peopleList">
+    <view class="peopleTitle">
+        <text class="text">编号</text>
+        <text class="text">姓名</text>
+        <text class="text">电话</text>
+        <navigator class="text" url="/pages/apply/apply">详情</navigator>
+    </view>
+    <view class="peopleListCon">
+        <view class="peopleItem">
+            <text class="text">NH001</text>
+            <text class="text">张丰文</text>
+            <text class="text">15185070538</text>
+            <navigator class="text" url="/pages/apply/apply">查看</navigator>
+        </view>
+        <view class="peopleItem">
+            <text class="text">NH001</text>
+            <text class="text">张丰文</text>
+            <text class="text">15185070538</text>
+            <navigator class="text" url="/pages/apply/apply">查看</navigator>
+        </view>
+        <view class="peopleItem">
+            <text class="text">NH001</text>
+            <text class="text">张丰文</text>
+            <text class="text">15185070538</text>
+            <navigator class="text" url="/pages/apply/apply">查看</navigator>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

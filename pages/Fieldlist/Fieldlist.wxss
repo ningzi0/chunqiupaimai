@@ -1,0 +1,81 @@
+/* pages/Fieldlist/Fieldlist.wxss */
+.fieldList{
+  margin-bottom: 3em;
+}
+.fieldItem{
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.fieldItem image{
+  width: 5em;
+  height: 5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.fieldText{
+  font-size: 0.85em;
+  width: 55%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.75em;
+}
+.fieldText .p{
+  margin: 0.5em 0;
+}
+.fieldItem .a{
+  display: inline-block;
+  width: 14%;
+  font-size: 0.85em;
+  text-align: center;
+  vertical-align: middle;
+}
+.fieldItem .a navigator{
+  background-color: #eee;
+  padding: 0.75em 0;
+  margin: 0.25em 0;
+}
+
+.add navigator{
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  font-size: 1.3em;
+  color: #fff;
+  background: #eb0347;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

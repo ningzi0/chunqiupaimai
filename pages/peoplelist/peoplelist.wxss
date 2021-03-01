@@ -1,0 +1,49 @@
+/* pages/peoplelist/peoplelist.wxss */
+.peopleList{
+  border: 1px solid #eee;
+  margin: 0.5em;
+  background: #f8f8f8;
+}
+.peopleTitle,.peopleItem{
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.peopleTitle .text,.peopleItem .text{
+  flex: 1;
+  text-align: center;
+  padding: 0.75em 0;
+  font-size: 0.9em;
+  margin: 0.5em;
+}
+.peopleItem .text{
+  font-size: 0.8em;
+}
+.peopleItem navigator.text{
+  background: rgb(255, 166, 0);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

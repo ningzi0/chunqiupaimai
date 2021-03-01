@@ -1,0 +1,105 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.search{
+  width: 50%;
+  height: 100rpx;
+  background: #f7f7f7;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0;
+  z-index: 9999;
+}
+.nav {
+  height: 100rpx;
+  width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 100rpx;
+  background: #f7f7f7;
+  font-size: 14px;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.nav-item {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.nav-item.active{
+  color: red;
+}
+.tab-box{
+  padding-top: 100rpx;
+  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+.tab-content{
+  overflow-y: scroll;
+}
+
+.search image{
+  position: absolute;
+  z-index: 3333;
+}
+.search input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+  border-radius: 5em;
+  background: #fff;
+  border: 0;
+}
+
+.fieldItem{
+  padding: 0.5em;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.fieldItem image{
+  width: 5em;
+  height: 5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.fieldText{
+  font-size: 0.85em;
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.75em;
+}
+.fieldText .p{
+  margin: 0.5em 0;
+}
+.addico{
+  display: inline-block;
+  width: 4em;
+  float: right;
+  background: #f7f7f7;
+  text-align: center;
+  height: 4em;
+  line-height: 4em;
+  margin-top: 0.5em;
+}
+.addico:active{
+  background: #f1f1f1;
+}
+
+
+
+
+

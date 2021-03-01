@@ -12,7 +12,7 @@
   color: #463d40;
   background-color: #fff;
 }
-.recordContent .li{
+.recordContent .li{ 
   display: inline-block;
   border: 1px solid #d8d8d8;
   min-width: 8em;
@@ -381,7 +381,7 @@
   background-color: #fff;
   position: fixed;
   bottom: 0;
-  width: 95%;
+  width: 97.5%;
   left:0;
   padding: 0.5em;
   box-shadow: 0 0 0.5em rgba(0,0,0,0.2);
@@ -410,12 +410,30 @@
   display: inline-block;
   vertical-align: middle;
 }
+.btn{
+  display: flex;
+}
+.btn view{
+  flex:1;
+}
+.btn2{
+  padding: 0.75em 0;
+  background-color: #d94b09;
+  color: #fff;
+  text-align: center;
+}
+.btn2:active{
+  opacity: 0.5;
+}
 .inputbtn{
   background-color: #d90f09;
   color: #fff;
   text-align: center;
   padding: 0.75em 0;
 }
+
+
+
 
 
 

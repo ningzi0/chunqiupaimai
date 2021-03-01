@@ -36,6 +36,10 @@ Page({
     {
       mylistTitle:'管理拍卖',
       url:'/pages/admin/admin'
+    },
+    {
+      mylistTitle:'拍卖场次管理',
+      url:'/pages/Fieldlist/Fieldlist'
     }],
     toolArray:[{
       toolimgSrc:'/images/icon/mytool1.png',

@@ -1,0 +1,86 @@
+<!--pages/apply/apply.wxml-->
+<view class="inputCon">
+  <view class="inputItem">
+    <text>竞拍号码：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>企业名称或竞买人姓名：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>地址：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>营业执照或身份证：</text>
+    <!-- 容器 -->
+    <view class='ui_uploader_cell'>
+        <!-- 根据已选择的图片临时路径数组展示图片-->
+        <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+            <!-- 删除-->
+            <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+            <!-- 图片-->
+            <image bindtap='showImg' data-index="{{index}}" src='{{item}}' mode="aspectFill"></image>
+        </view>
+        <!-- 上传按钮+框 -->
+        <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}">+</view>
+    </view>
+  </view>
+  <view class="inputItem">
+    <text>企业代码：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>注册资金：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>经营范围：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>法人：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>国籍：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>代理人：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>证件号码：</text>
+    <input type="text" />
+  </view>
+  <view class="inputItem">
+    <text>联系电话：</text>
+    <input type="number" />
+  </view>
+  <view class="inputItem">
+    <text>传真：</text>
+    <input type="number" />
+  </view>
+  <view class="inputItem">
+    <text>邮编：</text>
+    <input type="number" />
+  </view>
+  <view class="inputItem">
+    <text>保证金：</text>
+    <input type="number" />
+  </view>
+  
+</view>
+
+
+<view class="submit" hidden="true">
+    提交
+</view>
+<view class="submit adminsubmit">
+    <text>审核通过</text>
+    <text>审核驳回</text>
+</view>
+
+

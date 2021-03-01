@@ -215,6 +215,41 @@
           "pathName": "pages/live/live",
           "query": "",
           "scene": null
+        },
+        {
+          "id": 21,
+          "name": "意向竞买申请登记表",
+          "pathName": "pages/apply/apply",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "竞拍人列表",
+          "pathName": "pages/peoplelist/peoplelist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "拍卖场次列表",
+          "pathName": "pages/Fieldlist/Fieldlist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "添加场次",
+          "pathName": "pages/addField/addField",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "添加标的",
+          "pathName": "pages/addbiaodi/addbiaodi",
+          "query": "",
+          "scene": null
         }
       ]
     }

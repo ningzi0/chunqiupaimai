@@ -1,0 +1,107 @@
+/* pages/addField/addField.wxss */
+.addField{
+  margin-bottom: 3.5em;
+}
+.addField .input input{
+    font-size: 0.85em;
+    padding: 0.75em;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+.cover{
+  background: #fff;
+  padding: 0.5em 0;
+  overflow: hidden;
+}
+.cover .p{
+  font-size: 0.85em;
+  text-align: center;
+  padding: 0.25em 0;
+  color: #999;
+}
+
+/* 图片上传 */
+.ui_uploader{
+  width:95%;
+  height: 2.9em;
+  text-align: center;
+  line-height: 2.9em;
+  border: 1px solid #eee;
+  color: rgb(165, 165, 165);
+  display: block;
+  position: relative;
+  top: -2px;
+  font-size: 2em;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+}
+.ui_uploader_item{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+}
+.ui_uploader_item image{
+  width: 95%;
+  height: 6em;
+  border: 1px solid #eee;
+  padding: 0.35em;
+}
+.ui_uploader_item_icon{
+  position: absolute;
+  top: -8px;
+  right: -2px;
+}
+
+.fieldItem{
+  padding: 0.5em;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.fieldItem image{
+  width: 5em;
+  height: 5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.fieldText{
+  font-size: 0.85em;
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.75em;
+}
+.fieldText .p{
+  margin: 0.5em 0;
+}
+.addpro{
+  background: #fff;
+  overflow: hidden;
+}
+.addpro text.addproIco{
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 1em 0;
+  background: #f0f0f0;
+  width: 95%;
+  margin: 0.25em auto 0;
+}
+.addpro text.text{
+  text-align: center;
+  font-size: 0.85em;
+  color: #999;
+  display: block;
+  padding: 0.25em 0;
+}
+
+
+
+
+
+
+
+
+

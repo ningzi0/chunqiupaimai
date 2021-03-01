@@ -15,7 +15,7 @@ Page({
       orderTitle:'年末特惠9字头买观山湖万科 精装带地暖 读贵阳一中享双轨道',
       ordertext:'起拍价：1547,336元',
       ordertext2:'保证金：150,000元',
-      btn:'缴纳保证金'
+      btn:'修改竞拍信息'
     },{
       imgSrc:'/images/house2.jpg',
       tags:'待缴纳',

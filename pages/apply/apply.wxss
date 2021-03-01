@@ -1,0 +1,84 @@
+/* pages/apply/apply.wxss */
+.inputCon{
+  background: #fff;
+  font-size: 0.9em;
+  color: #333;
+  margin-bottom: 4em;
+}
+.inputItem{
+  padding:1em 0.75em;
+  border-bottom: 1px solid #eee;
+}
+.inputItem text{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.35em 0;
+}
+.inputItem input{
+  max-width: 75%;
+  display: inline-block;
+  min-width: 35%;
+  vertical-align: middle;
+  padding: 0.35em 0.5em;
+  background-color: #f0f0f0;
+  float: right;
+}
+.ui_uploader{
+  width:2.9em;
+  height: 2.9em;
+  text-align: center;
+  line-height: 2.9em;
+  border: 1px solid #eee;
+  color: rgb(165, 165, 165);
+  margin: 0.35em 0;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  font-size: 2em;
+  background-color: #f0f0f0;
+}
+.ui_uploader_item{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.ui_uploader_item image{
+  width: 5em;
+  height: 5em;
+  border: 1px solid #eee;
+  padding: 0.35em;
+  margin-right: 0.75em;
+}
+.ui_uploader_item_icon{
+  position: absolute;
+  top: -8px;
+  right: -2px;
+}
+
+.submit{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.85em 0;
+  text-align: center;
+  color: #fff;
+  background-color: #eb0347;
+}
+
+.adminsubmit{
+  display: flex;
+  padding: 0;
+}
+.adminsubmit text{
+  flex: 1;
+  padding: 0.85em 0;
+}
+.adminsubmit text:last-child{
+  background-color: #666;
+}
+
+
+
+

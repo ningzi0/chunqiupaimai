@@ -276,7 +276,7 @@
             <text class="text3"></text>
         </view>
         <view class="liveText">
-            <text>直播讲解</text>
+            <text>正在拍卖</text>
         </view>
     </navigator>
 </view>

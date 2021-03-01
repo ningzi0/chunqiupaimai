@@ -592,7 +592,16 @@ page{
   color: #fff;
 }
 
-
+.submit{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.85em 0;
+  text-align: center;
+  color: #fff;
+  background-color: #eb0347;
+}
 
 
 

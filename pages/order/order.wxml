@@ -1,5 +1,5 @@
 <view class="tab-title smallTitle">
-	<view class="{{selected1?'border-tottom':'default'}} titleItem" bindtap="selected1">待交保</view>
+	<view class="{{selected1?'border-tottom':'default'}} titleItem" bindtap="selected1">待审核</view>
 	<view class="{{selected2?'border-tottom':'default'}} titleItem" bindtap="selected2">待开拍</view>
 	<view class="{{selected3?'border-tottom':'default'}} titleItem" bindtap="selected3">竞价中</view>
   <view class="{{selected4?'border-tottom':'default'}} titleItem" bindtap="selected4">已结束</view> 

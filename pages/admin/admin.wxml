@@ -22,6 +22,7 @@
                           </view>
                       </navigator>
                       <view class="btn">
+                        <navigator url="/pages/peoplelist/peoplelist">查看竞拍人列表</navigator>
                         <navigator url="/pages/pricelist/pricelist">{{item.btn}}</navigator>
                       </view>
                   </li>
@@ -46,6 +47,7 @@
                           </view>
                       </navigator>
                       <view class="btn">
+                          <navigator url="/pages/peoplelist/peoplelist">查看竞拍人列表</navigator>
                           <navigator url="/pages/pricelist/pricelist">{{item.btn}}</navigator>
                       </view>
                   </li>
@@ -70,6 +72,7 @@
                           </view>
                       </navigator>
                       <view class="btn">
+                        <navigator url="/pages/peoplelist/peoplelist">查看竞拍人列表</navigator>
                         <navigator url="/pages/pricelist/pricelist">{{item.btn}}</navigator>
                       </view>
                   </li>

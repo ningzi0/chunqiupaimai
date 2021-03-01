@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    hiddenn2:true,
     hiddenn:true,
     _num:1,
     BgColor: '#ff7315',
@@ -78,6 +79,9 @@ Page({
       number:'NB1002',
       tags:'离线',
       className:'offlineTags'
+    }],
+    NameArray:[{
+      name:'中天世纪新城三组团D1栋'
     }]
   },
   selected1: function (e) {
@@ -111,6 +115,16 @@ Page({
   onlineClickShow:function(){
     this.setData({
       hiddenn:false,
+    })
+  },
+  clickShow:function(){
+    this.setData({
+      hiddenn2:false,
+    })
+  },
+  clickHidden:function(){
+    this.setData({
+      hiddenn2:true,
     })
   },
   onlineClickHidden:function(){
