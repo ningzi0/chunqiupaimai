@@ -294,12 +294,21 @@
                 <view class="body-view">
                     <view class="text">
                         <text>最小值5</text>
-                        <text>最大值200（单位：万）</text>
+                        <text>最大值200（单位：分）</text>
                     </view>
                     <slider min="5" max="200" show-value/>
                 </view>
-                <view class="inputp">
+                <view class="inputp" hidden="false">
                     <input type="number" placeholder="输入单次出价金额"/><text>单位：万</text>
+                </view>
+                <view class="Offline">
+                    <text>编号：001</text>
+                    <input type="number" placeholder="输入线下价格"/>
+                    <text class="sub">发送</text>
+                </view>
+                <view class="inputText">
+                    <input type="text" placeholder="拍卖师发言"/>
+                    <view class="btn">发送</view>
                 </view>
                 <view class="btn">
                     <view class="btn2" bindtap="clickShow">查看资产列表</view>

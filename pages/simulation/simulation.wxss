@@ -85,7 +85,7 @@
 .tab-content {
   padding: 2%;
   text-align: justify;
-  margin-bottom: 3.5em;
+  margin-bottom: 13.5em;
 }
 .tab-content .p{
   font-size: 0.85em;
@@ -433,11 +433,52 @@
 }
 
 
+/* 线下价格 */
+.Offline{
+  border: 1px solid #eee;
+  margin: 0.3em;
+  padding: 0.5em;
+  font-size: 0.85em;
+}
+.Offline text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.Offline input{
+  width:53%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #e9e9e9;
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+}
+.Offline text.sub{
+  background-color: #d90f09;
+  text-align: center;
+  color: #fff;
+  padding: 0.66em;
+}
 
-
-
-
-
-
+.inputText{
+  font-size: 0.85em;
+  margin: 0.5em;
+}
+.inputText input{
+  font-size: 0.8em;
+  padding: 0.65em;
+  background-color: #f0f0f0;
+  width: 75%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.inputText .btn{
+  background-color: #d90f09;
+  color: #fff;
+  width: 18%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5em 0;
+}
 
 
