@@ -69,7 +69,7 @@
   </view>
   <view class="inputItem">
     <text>保证金：</text>
-    <input type="number" />
+    <view class="input"></view>
   </view>
   
 </view>
