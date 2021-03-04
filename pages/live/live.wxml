@@ -18,6 +18,7 @@
 
 <view class="liveList">
     <view class="li">
+      <view class="end">已结束</view>
       <navigator url="/pages/simulation/simulation">
         <view class="livelistIco">
           <view class="liveIco">
@@ -32,6 +33,7 @@
       </navigator>
     </view>
     <view class="li">
+      <view class="end start">未开始</view>
       <navigator url="/pages/simulation/simulation">
         <view class="livelistIco">
             <view class="liveIco">

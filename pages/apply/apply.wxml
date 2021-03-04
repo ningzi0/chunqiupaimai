@@ -2,7 +2,7 @@
 <view class="inputCon">
   <view class="inputItem">
     <text>竞拍号码：</text>
-    <input type="text" />
+    <view class="input"></view>
   </view>
   <view class="inputItem">
     <text>企业名称或竞买人姓名：</text>

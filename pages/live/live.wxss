@@ -74,3 +74,19 @@
   width: 3px;
   margin: 0 0.06em;
 }
+
+.liveList .li .end{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(238, 238, 238);
+  color: #555555;
+  padding: 1em 1.5em;
+  font-size: 0.95em;
+}
+.liveList .li .start{
+  background: rgb(84, 204, 120);
+  color: #fff;
+}
+
