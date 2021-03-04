@@ -28,6 +28,7 @@
                   <view class="p">标的名称：中天世纪新城三组团D1栋</view>
                   <view class="p">开始时间：2021-02-25 13:00</view>
               </view>
+              <view class="del">删除</view>
           </view>
           <view class="fieldItem">
               <image src="/images/house2.jpg" mode="aspectFill"></image>
@@ -35,6 +36,7 @@
                   <view class="p">标的名称：中天世纪新城三组团D1栋</view>
                   <view class="p">开始时间：2021-02-25 13:00</view>
               </view>
+              <view class="del">删除</view>
           </view>
       </view>
       <view class="addpro">

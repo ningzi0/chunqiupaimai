@@ -68,10 +68,20 @@
 }
 .fieldText{
   font-size: 0.85em;
-  width: 65%;
+  width: 60%;
   display: inline-block;
   vertical-align: middle;
   padding: 0 0.75em;
+}
+.del{
+  display: inline-block;
+  vertical-align: middle;
+  height: 5em;
+  line-height: 5em;
+  font-size: 0.85em;
+  background: rgb(255, 174, 0);
+  color: #fff;
+  padding: 0 0.5em;
 }
 .fieldText .p{
   margin: 0.5em 0;
