@@ -250,6 +250,13 @@
           "pathName": "pages/addbiaodi/addbiaodi",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "确认书凭证",
+          "pathName": "pages/voucher/voucher",
+          "query": "",
+          "scene": null
         }
       ]
     }

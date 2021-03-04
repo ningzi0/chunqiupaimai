@@ -26,6 +26,7 @@
     "pages/Fieldlist/Fieldlist",
     "pages/addField/addField",
     "pages/addbiaodi/addbiaodi",
+    "pages/voucher/voucher",
     "pages/logs/logs"
   ],
   "window":{

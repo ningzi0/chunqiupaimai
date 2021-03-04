@@ -1,0 +1,5 @@
+/* pages/voucher/voucher.wxss */
+.confirm{
+  width:100%;
+  height: 50em;
+}

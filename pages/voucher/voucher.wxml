@@ -1,0 +1,2 @@
+<!--pages/voucher/voucher.wxml-->
+<image src="/images/confirm.jpg" class="confirm" mode="aspectFill"></image>

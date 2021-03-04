@@ -54,6 +54,14 @@ Page({
       ordertext2:'当前价：150,000元',
       btn:'我要出价'
     }],
+    orderArray4:[{
+      imgSrc:'/images/house.jpg',
+      tags:'竞价中',
+      orderTitle:'年末特惠9字头买观山湖万科 精装带地暖 读贵阳一中享双轨道',
+      ordertext:'起拍价：1547,336元',
+      ordertext2:'当前价：150,000元',
+      btn:'查看凭证'
+    }],
     selected1: true,
     selected2: false,
     selected3:false,
