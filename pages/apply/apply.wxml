@@ -8,9 +8,9 @@
     <text>企业名称或竞买人姓名：</text>
     <input type="text" />
   </view>
-  <view class="inputItem">
+  <view class="inputItem clearfix">
     <text>地址：</text>
-    <input type="text" />
+    <textarea></textarea>
   </view>
   <view class="inputItem">
     <text>营业执照或身份证：</text>
@@ -35,9 +35,9 @@
     <text>注册资金：</text>
     <input type="text" />
   </view>
-  <view class="inputItem">
+  <view class="inputItem clearfix">
     <text>经营范围：</text>
-    <input type="text" />
+    <textarea></textarea>
   </view>
   <view class="inputItem">
     <text>法人：</text>
