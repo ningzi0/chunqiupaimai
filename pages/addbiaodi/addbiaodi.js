@@ -17,8 +17,25 @@ Page({
             }
         ],
         currentTab: 0,
-        navScrollLeft: 0
+        navScrollLeft: 0,
+        dates: [
+            { "imgUrl": "/images/house2.jpg", "name": "中天世纪新城三组团D1栋", "state": 0 },
+            { "imgUrl": "/images/house2.jpg", "name": "中天世纪新城三组团D2栋", "state": 0  }
+          ]
     },
+
+    select_date: function (e) {
+        var index = e.currentTarget.dataset.key;
+        if (this.data.dates[index].state == 1) {
+          this.data.dates[index].state = 0;
+        } else if (this.data.dates[index].state == 0) {
+          this.data.dates[index].state = 1;
+        }
+        this.setData({
+          dates: this.data.dates,
+        });
+      },
+
     //事件处理函数
     onLoad: function () {
         if (app.globalData.userInfo) {

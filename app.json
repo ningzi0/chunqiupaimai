@@ -28,6 +28,7 @@
     "pages/addbiaodi/addbiaodi",
     "pages/voucher/voucher",
     "pages/dateTimePicker/dateTimePicker",
+    "pages/toggleClass/toggleClass",
     "pages/logs/logs"
   ],
   "window":{

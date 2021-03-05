@@ -264,6 +264,13 @@
           "pathName": "pages/dateTimePicker/dateTimePicker",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "toggleClass点击测试",
+          "pathName": "pages/toggleClass/toggleClass",
+          "query": "",
+          "scene": null
         }
       ]
     }

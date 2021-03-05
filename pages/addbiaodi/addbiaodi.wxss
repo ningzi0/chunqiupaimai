@@ -95,11 +95,12 @@ page{
   line-height: 4em;
   margin-top: 0.5em;
 }
-.addico:active{
-  background: #f1f1f1;
+
+.active-tag .addico{
+  background: #eb0347;
+  color:#fff;
+  border:1rpx solid #fff;
 }
-
-
 
 
 
