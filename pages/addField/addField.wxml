@@ -19,6 +19,20 @@
         <view class="p">封面图</view>
     </view>
 
+    <view class="input ccstarttime">
+        <view class="tui-picker-content">
+            <view class="tui-picker-name">场次开始时间：</view>
+            <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+                <view class="tui-picker-detail">
+                {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}
+                </view>
+            </picker>
+        </view>
+    </view>
+
+
+
+
     <!-- 添加标的 -->
     <view class="prolist">
       <view class="fieldList">

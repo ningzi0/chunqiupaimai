@@ -23,9 +23,9 @@
 /* 图片上传 */
 .ui_uploader{
   width:95%;
-  height: 2.9em;
+  height: 5.9em;
   text-align: center;
-  line-height: 2.9em;
+  line-height: 5.9em;
   border: 1px solid #eee;
   color: rgb(165, 165, 165);
   display: block;
@@ -45,7 +45,7 @@
 }
 .ui_uploader_item image{
   width: 95%;
-  height: 6em;
+  height: 15em;
   border: 1px solid #eee;
   padding: 0.35em;
 }
@@ -108,9 +108,19 @@
 }
 
 
-
-
-
+/* 场次开始时间 */
+.ccstarttime{
+  padding: 0.75em 0.5em;
+  background-color: #fff;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+}
+.ccstarttime .tui-picker-name{
+  display: inline-block;
+}
+.ccstarttime picker{
+  display: inline-block;
+}
 
 
 
