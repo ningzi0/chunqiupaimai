@@ -9,6 +9,7 @@
         <view class="a">
             <navigator>查看</navigator>
             <navigator>修改</navigator>
+            <view class="delbtn">删除</view>
         </view>
     </view>
 </view>
