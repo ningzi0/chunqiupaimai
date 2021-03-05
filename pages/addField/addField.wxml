@@ -1,7 +1,8 @@
 <!--pages/addField/addField.wxml-->
 <view class="addField">
     <view class="input">
-        <input type="text" value="场次名称：" />
+        <view class="tui-picker-name">场次名称：</view>
+        <input type="text" value="" />
     </view>
     <view class="cover">
         <!-- 容器 -->
