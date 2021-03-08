@@ -1,3 +1,4 @@
+<view class="pageContent">
 <view class="banner">
     <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
         <block wx:for="{{movies}}" wx:for-index="index">  
@@ -288,10 +289,11 @@
 
 
 
-
         <view class="inputprice">
             <view class="slider">
-                <view class="body-view">
+
+
+                <!-- <view class="body-view">
                     <view class="text">
                         <text>最小值5</text>
                         <text>最大值200（单位：分）</text>
@@ -309,7 +311,9 @@
                 <view class="inputText">
                     <input type="text" placeholder="拍卖师发言"/>
                     <view class="btn">发送</view>
-                </view>
+                </view> -->
+
+
                 <view class="btn">
                     <view class="btn2" bindtap="clickShow">查看资产列表</view>
                     <view class="inputbtn">出价</view>
@@ -345,16 +349,31 @@
     </view>
 
 
-
-
-
+</view>
 
 </view>
 
 
+<view class="input_float">
+    <view class="inputfloatUl">
+        <view class="inputfloatli" bindtap="sliderclickShow">调价频率</view>
+        <view class="inputfloatli">线下改价</view>
+        <view class="inputfloatli">发言</view>
+    </view>
+</view>
 
-
-
+<view class="inputslider" hidden="{{sliderHidden}}"  bindtap="sliderclickHidden">
+    <view class="inputsliderCon">
+        <view class="body-view">
+            <view class="text">
+                <text>最小值5</text>
+                <text>最大值200（单位：分）</text>
+            </view>
+            <slider min="5" max="200" show-value/>
+            <view class="inputsliderbtn" bindtap="sliderclickHidden">调整出价频率</view>
+        </view>
+    </view>
+</view>
 
 
 

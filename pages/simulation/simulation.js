@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    sliderHidden:true,
     hiddenn2:true,
     hiddenn:true,
     _num:1,
@@ -132,6 +133,20 @@ Page({
       hiddenn:true,
     })
   },
+  // 调价频率-线下改价-发言
+  sliderclickShow:function(){
+    this.setData({
+      sliderHidden:false,
+    })
+  },
+  sliderclickHidden:function(){
+    this.setData({
+      sliderHidden:true,
+    })
+  },
+
+
+
   menuClick:function(e){
     this.setData({
       _num:e.target.dataset.num

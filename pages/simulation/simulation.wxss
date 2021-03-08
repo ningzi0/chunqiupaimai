@@ -482,3 +482,54 @@
 }
 
 
+/* floatinput */
+.input_float{
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgba(0,0,0,0.2);
+  padding: 0.2em;
+}
+.inputfloatli{
+  padding: 0.5em 0.75em;
+  text-align: center;
+  border: 1px solid #eee;
+  width: 2em;
+  font-size: 0.9em;
+  margin: 0.2em 0;
+}
+/* 调价频率 */
+.inputslider{
+  position: fixed;
+  bottom: 0;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.507);
+  width: 100%;
+  /* padding: 1em; */
+  box-sizing: border-box;
+  box-shadow: 0 0 1em rgba(0,0,0,0.2);
+  height: 100%;
+}
+.inputslider .inputsliderCon{
+  padding: 0.5em;
+  border: 1px solid #eee;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.inputslider .inputsliderCon .body-view{
+  border: 1px solid #eee;
+  padding: 0.75em;
+}
+.inputsliderbtn{
+  background-color:#d90f09;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  margin: 1em 0 0;
+}
+
+
