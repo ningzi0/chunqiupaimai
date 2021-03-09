@@ -271,6 +271,13 @@
           "pathName": "pages/toggleClass/toggleClass",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "识别",
+          "pathName": "pages/distinguishinput/distinguishinput",
+          "query": "",
+          "scene": null
         }
       ]
     }

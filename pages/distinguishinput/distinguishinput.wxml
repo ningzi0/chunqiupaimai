@@ -1,0 +1,130 @@
+<view class="dist_input">
+    <view class="distTitle">
+        <view class="distTitem {{state==index?'active-tag':''}}" wx:for-index="index" catchtap="select_date"  wx:for="{{dates}}" data-key='{{index}}'>{{item.data_name}}</view>
+    </view>
+
+    <view class="ul">
+        <view class="li">
+            <view class="li_item">
+                <view class="just item"  bindtap='img_w_show' >
+                    <view class="pic">
+                        <image src="/images/id1.jpg" mode="aspectFill"></image>
+                    </view>
+                    <view class="button">上传身份证正面</view>
+                </view>
+                <view class="back item"  bindtap='img_w_show'>
+                  <view class="pic">
+                        <image src="/images/id2.jpg" mode="aspectFill"></image>
+                    </view>
+                    <view class="button">上传身份证反面</view>
+                </view>
+            </view>
+        </view>
+        <view class="li yyzz" hidden="{{tablehidden}}" >
+            <view class="li_item">
+                <view class="just item" bindtap='img_w_show'>
+                    <view class="pic">
+                        <image src="/images/yyzz.jpg" mode="aspectFill"></image>
+                    </view>
+                    <view class="button">上传营业执照</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+
+    <view class="inputText">
+        <view class="label">
+            <text>拍卖编号</text>
+            <input type="text" placeholder="NH001"/>
+        </view>
+        <view class="label">
+            <text>姓名</text>
+            <input type="text" placeholder="上传身份证自动识别"/>
+        </view>
+        <view class="label">
+            <text>地址</text>
+            <input type="text" placeholder="上传身份证自动识别"/>
+        </view>
+        <view class="label">
+            <text>身份证号码</text>
+            <input type="text" placeholder="上传身份证自动识别"/>
+        </view>
+        <view class="label" hidden="{{tablehidden}}">
+            <text>企业名称</text>
+            <input type="text" placeholder="上传营业执照自动识别"/>
+        </view>
+        <view class="label">
+            <text>保证金</text>
+            <input type="text" placeholder="50000元"/>
+        </view>
+        <view class="label">
+            <text>打款账号</text>
+            <input type="text" placeholder="工行123456789122546"/>
+        </view>
+        
+    </view>
+</view>
+
+
+<!-- 关注公众号 -->
+<view class="follow" hidden="{{hidden}}">
+  <view class="followContent">
+    <view class="fllowTit">关注公众号</view>
+    <view class="fllowCon">关注公众号可获取后续拍卖进度，及重要通知！请务必关注</view>
+    <view class="fllowBtn">
+        <view class="fllowBtnItem">去关注</view>
+        <view class="fllowBtnItem" bindtap="onlineClickHidden">取消</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="submit" bindtap="onlineClickShow">提交</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

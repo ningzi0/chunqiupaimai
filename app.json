@@ -27,6 +27,7 @@
     "pages/addField/addField",
     "pages/addbiaodi/addbiaodi",
     "pages/voucher/voucher",
+    "pages/distinguishinput/distinguishinput",
     "pages/dateTimePicker/dateTimePicker",
     "pages/toggleClass/toggleClass",
     "pages/logs/logs"

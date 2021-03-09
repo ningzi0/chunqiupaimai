@@ -1,0 +1,138 @@
+/* pages/distinguishinput/distinguishinput.wxss */
+page{
+  background-color: #fff;
+}
+.dist_input .ul .li .li_item{
+  display: flex;
+  padding: 0.3em;
+}
+.dist_input .ul .li .item{
+  flex: 1;
+  padding: 0.0.2em;
+  margin: 0.2em;
+}
+.dist_input .ul .li .item .pic{
+  background-color: #eee;
+  padding: 0.3em;
+}
+.dist_input .ul .li .item image{
+  width: 100%;
+  height: 6em;
+  display: block;
+}
+.dist_input .ul .li .item .button{
+  font-size: 0.85em;
+  text-align: center;
+  padding: 0.75em 0.5em;
+  background-color: #eb0347;
+  color: #fff;
+  margin-top: 0.2em;
+}
+
+
+.dist_input .ul .yyzz .item image{
+  height: 10em;
+}
+
+
+.inputText text{
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+  padding: 0 0.5em;box-sizing: border-box;
+}
+.inputText input{
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 50%;
+  text-align: right;
+}
+.inputText .label{
+  padding: 0.75em 0.5em;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+}
+.dist_input {
+  margin-bottom: 3em;
+}
+
+.submit{
+  z-index: 99999;
+}
+
+/* 关注公众号 */
+.follow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.followContent{
+  background-color: #fff;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 0.9em;
+}
+.followContent .fllowTit{
+  text-align: center;
+  padding: 0.75em 0;
+  border-bottom: 1px solid #eee;
+}
+.followContent .fllowCon{
+  padding: 0.75em;
+  text-align: center;
+}
+.followContent .fllowBtn{
+  display: flex;
+}
+.followContent .fllowBtn .fllowBtnItem{
+  flex: 1;
+  text-align: center;
+  padding: 0.75em 0;
+  color: #fff;
+}
+.followContent .fllowBtn .fllowBtnItem:first-child{
+  background-color: #eb0347;
+}
+.followContent .fllowBtn .fllowBtnItem:last-child{
+  background-color: #afafaf;
+}
+
+
+.distTitle{
+  display: flex;
+}
+.distTitem{
+  flex: 1;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0.5em;
+  background-color: #eee;
+  margin: 0.3em;
+}
+.active-tag{
+  background-color: #eb0347;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
