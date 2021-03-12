@@ -36,7 +36,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
-  "appid": "wx3bf15eed5dc65e0b",
+  "appid": "wx08b184e251f7f66a",
   "projectname": "project",
   "debugOptions": {
     "hidedInDevtools": []
@@ -273,11 +273,18 @@
           "scene": null
         },
         {
-          "id": -1,
+          "id": 29,
           "name": "识别",
           "pathName": "pages/distinguishinput/distinguishinput",
           "query": "",
-          "scene": null
+          "scene": 1047
+        },
+        {
+          "id": 30,
+          "name": "引导关注公众号",
+          "pathName": "pages/weixin/weixin",
+          "query": "",
+          "scene": 1047
         }
       ]
     }

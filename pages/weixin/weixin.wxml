@@ -1,0 +1,9 @@
+<view class="follow">
+  <view class="followContent">
+    <view class="fllowTit">关注公众号</view>
+    <view class="fllowCon">关注公众号可获取后续拍卖进度，及重要通知！请务必关注</view>
+    <view class="fllowBtn">
+        <official-account style="width:100%"></official-account>
+    </view>
+  </view>
+</view>

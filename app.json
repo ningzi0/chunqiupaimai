@@ -28,6 +28,7 @@
     "pages/addbiaodi/addbiaodi",
     "pages/voucher/voucher",
     "pages/distinguishinput/distinguishinput",
+    "pages/weixin/weixin",
     "pages/dateTimePicker/dateTimePicker",
     "pages/toggleClass/toggleClass",
     "pages/logs/logs"
