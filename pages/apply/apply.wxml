@@ -67,12 +67,23 @@
     <text>邮编：</text>
     <input type="number" />
   </view>
-  <view class="inputItem">
-    <text>保证金：</text>
-    <view class="input"></view>
-  </view>
   
+  <view class="money">
+    <view class="money_item">
+        <view class="money_title">保证金</view>
+        <view class="moneyContent">￥500,00.00</view>
+    </view>
+    <view class="money_item">
+        <view class="money_title">开户行名称</view>
+        <view class="moneyContent">中国工商银行股份有限公司宝山支行</view>
+    </view>
+    <view class="money_item">
+        <view class="money_title">对公账户</view>
+        <view class="moneyContent">123456789123456789</view>
+    </view>
+  </view>
 </view>
+
 
 
 <view class="submit" hidden="true">

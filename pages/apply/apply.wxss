@@ -4,6 +4,7 @@
   font-size: 0.9em;
   color: #333;
   margin-bottom: 4em;
+  padding-bottom: 1em;
 }
 .inputItem{
   padding:1em 0.75em;
@@ -85,5 +86,22 @@
 }
 
 
-
+.money{
+  text-align: center;
+  line-height: 2;
+  font-size: 0.85em;
+  margin: 1em;
+  border: 1px solid #eee;
+}
+.money_item{
+  border-bottom: 1px solid #eee;
+  padding: 1em 0;
+}
+.money_item:last-child{
+  border-bottom: 0;
+}
+/* .money .moneyContent{
+  border: 1px solid #eee;
+  margin: 0 2em;
+} */
 
