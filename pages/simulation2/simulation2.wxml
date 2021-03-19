@@ -59,15 +59,17 @@
 
 <view class="inputprice">
     <view class="slider">
-        <view class="body-view">
+        <!-- <view class="body-view">
             <view class="text">
-                <text>最小值5</text>
-                <text>最大值200（单位：万）</text>
+                <text>最小值1000</text>
+                <text>最大值10000（单位：元）</text>
             </view>
-            <slider min="5" max="200" show-value/>
-        </view>
+            <slider min="1000" max="10000" show-value step="1000"/>
+        </view> -->
+
         <view class="inputp">
-            <input type="number" placeholder="输入单次出价金额"/><text>单位：万</text>
+            <text>最低出价:1000元</text>
+            <input type="number" placeholder="单次出价需是1000的倍数"/><text>单位：元</text>
         </view>
         <view class="btn">
             <view class="inputbtn">出价</view>
