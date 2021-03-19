@@ -43,7 +43,7 @@
 
 
 /* 金额选择 */
-.sliderItem .ul .li{
+/* .sliderItem .ul .li{
   display: inline-block;
   width: 15.3%;
   text-align: center;
@@ -52,5 +52,32 @@
   padding: 1%;
   font-size: 0.85em;
 
+} */
+
+
+/*金额加减*/
+.inputp{
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 0.5em;
 }
+.inputp input{
+  margin-top: 0;
+  width: 96%;
+}
+.inputp text{
+  display: block;
+}
+.inputp button{
+  display: inline-block;
+  width: 50% !important;
+  margin: 0.5em 0.5em 0;
+  border: 1px solid #eee;
+}
+
+
+
+
+
+
 

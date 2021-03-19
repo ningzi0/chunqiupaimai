@@ -69,7 +69,10 @@
 
         <view class="inputp">
             <text>最低出价:1000元</text>
-            <input type="number" placeholder="单次出价需是1000的倍数"/><text>单位：元</text>
+            <button>+</button>
+            <button>-</button>
+            <input type="number" placeholder="单次出价需是1000的倍数"/>
+            <text>单位：元</text>
         </view>
         <view class="btn">
             <view class="inputbtn">出价</view>

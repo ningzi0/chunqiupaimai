@@ -93,7 +93,15 @@ page{
 
 
 
-
+/* 阅读拍卖明细 */
+.read{
+  text-align: center;
+  font-size: 0.85em;
+  color: #eb0347;
+}
+.read navigator{
+  padding: 1em 0;
+}
 
 
 

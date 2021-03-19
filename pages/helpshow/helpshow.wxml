@@ -9,14 +9,20 @@
         <view class="p">5) 拍卖开始后方可出价，手机和电脑上均可出价，若报名成功不想出价也可以不出价，保证金不会因此被罚扣；</view>
         <view class="p">6) 如您竞拍失败，保证金通常会原路退回，如您竞拍成功，保证金会自动转移到平台账户上；请按照竞买公告中要求的方式支付尾款，然后再等平台通知或主动联系平台办理后续交割事宜。</view>
         
+        <view class="Read">
+            <text>我已阅读</text>
+        </view>
     </view>
 
-    <view class="serviceWrap">
+    <!-- <view class="serviceWrap">
         <button class="service" open-type="contact" bindcontact="handleContact">
             <image src="/images/icon/service.png"></image>
             <text>在线客服</text>
         </button>
-    </view>
+    </view> -->
+
+
+
 
 </view>
 

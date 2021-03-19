@@ -56,6 +56,19 @@ page{
 
 
 
+/*已阅读按钮*/
+.Read{
+  text-align: center;
+  background-color: #d90f09;
+  color: #fff;
+  padding: 0.75em 0;
+}
+
+
+
+
+
+
 
 
 

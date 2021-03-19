@@ -63,7 +63,9 @@
             <text>打款账号</text>
             <input type="text" placeholder="工行123456789122546"/>
         </view>
-        
+        <view class="read">
+            <navigator url="/pages/helpshow/helpshow">阅读拍卖明细</navigator>
+        </view>
     </view>
 </view>
 
