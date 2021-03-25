@@ -532,4 +532,7 @@
   margin: 1em 0 0;
 }
 
-
+/* 竞买记录更多 */
+.recordTit navigator{
+  float:right;
+}

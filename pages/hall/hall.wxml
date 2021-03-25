@@ -1,0 +1,78 @@
+<!--pages/hall/hall.wxml-->
+<view class="hallbody">
+  <view class="halltop">
+      <view class="pic">
+          <image src="/images/house.jpg" mode="aspectFill"></image>
+          <view class="hallpicText">
+            <text class="soon">即将开始</text>
+            <view class="day_time">
+              <text>{{qgdjs_jo.day}}</text>
+              <text>天</text>
+              <text>{{qgdjs_jo.hour}}</text>
+              <text>时</text>
+              <text>{{qgdjs_jo.min}}</text>
+              <text>分</text>
+              <text>{{qgdjs_jo.sec}}</text>
+              <text>秒</text>
+            </view>
+          </view>
+      </view>
+      <view class="hallTitle">春秋拍卖 | 贵州省贵阳市南明区共约八处房产拍卖会</view>
+  </view>
+
+  <view class="list">
+    <view class="listTitle">标的列表</view>
+    <view class="listCon">
+
+      <view class="assetsContent">
+    <ul>
+        <block wx:for="{{assetsConArray}}">
+            <li>
+                <navigator class="clearfix" url="/pages/simulation/simulation">
+                    <view class="pic">
+                        <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="assetsCon">
+                        <view class="assetTit">{{item.assetTit}}</view>
+                        <view class="p">{{item.assetDate}}</view>
+                        <view class="price">
+                            <text class="small">当前价:</text>
+                            <text class="big">{{item.price}}</text>
+                            <text class="small">万元</text>
+                        </view>
+                        <view class="p">
+                            <text>{{item.text1}}次围观</text>
+                            <text>{{item.text2}}次出价</text>
+                        </view>
+                        <view class="tags {{item.tagsClass}}">{{item.tags}}</view>
+                    </view>
+                </navigator>
+            </li>
+        </block>
+    </ul>
+</view>
+
+
+
+    </view>
+  </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

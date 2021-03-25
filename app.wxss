@@ -634,6 +634,29 @@ page{
 
 
 
+/* 竞买记录 */
+.recordTitl{
+  background-color: #eee;
+}
+.recordTitl,.recordConItem{
+  display: flex;
+}
+.recordConItem{
+  border-bottom: 1px solid #eee;
+  color: #777;
+}
+.recordConItem:first-child{
+  color: #eb0347;
+}
+.recordTitl text,.recordConItem text{
+  flex: 1;
+  text-align: center;
+  font-size: 0.85em;
+  padding: 1em 0;
+}
+.recordConItem text:last-child,.recordTitl text:last-child{
+  flex: 2;
+}
 
 
 

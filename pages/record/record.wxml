@@ -1,0 +1,87 @@
+<view class="recordTitl">
+    <text>状态</text>
+    <text>竞买号</text>
+    <text>价格</text>
+    <text>时间</text>
+</view>
+
+
+
+<view class="recordCon">
+  <view class="recordConItem">
+    <text>领先</text>
+    <text>O9659</text>
+    <text>80,000</text>
+    <text>2021-03-25 15:02:38</text>
+  </view>
+  <view class="recordConItem">
+    <text>淘汰</text>
+    <text>Y5658</text>
+    <text>79,000</text>
+    <text>2021-03-25 15:02:38</text>
+  </view>
+  <view class="recordConItem">
+    <text>淘汰</text>
+    <text>T1254</text>
+    <text>78,000</text>
+    <text>2021-03-25 15:02:38</text>
+  </view>
+  <view class="recordConItem">
+    <text>淘汰</text>
+    <text>E5568</text>
+    <text>77,000</text>
+    <text>2021-03-25 15:02:38</text>
+  </view>
+  <view class="recordConItem">
+    <text>淘汰</text>
+    <text>U6588</text>
+    <text>76,000</text>
+    <text>2021-03-25 15:02:38</text>
+  </view>
+  <view class="recordConItem">
+    <text>淘汰</text>
+    <text>Y2568</text>
+    <text>75,000</text>
+    <text>2021-03-25 15:02:38</text>
+  </view>
+  <view class="recordConItem">
+    <text>淘汰</text>
+    <text>W4456</text>
+    <text>74,000</text>
+    <text>2021-03-25 15:02:38</text>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

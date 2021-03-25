@@ -69,6 +69,7 @@
   </view>
   
   <view class="money">
+    <view class="tips">重要提示</view>
     <view class="money_item">
         <view class="money_title">保证金</view>
         <view class="moneyContent">￥500,00.00</view>

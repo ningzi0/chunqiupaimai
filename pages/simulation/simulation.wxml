@@ -44,14 +44,14 @@
 
 <!-- 标题价格 -->
 <view class="simulationTitle">
-    <view class="simulationTit">
+    <!-- <view class="simulationTit">
         <view class="simulationTitWrap">
             <view class="simulationTitItem {{_num==1?'active':''}}" data-num="1" bindtap="menuClick"><text>一号拍品</text>贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
             <view class="simulationTitItem {{_num==2?'active':''}}" data-num="2" bindtap="menuClick"><text>二号拍品</text>贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
             <view class="simulationTitItem {{_num==3?'active':''}}" data-num="3" bindtap="menuClick"><text>三号拍品</text>贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
             <view class="simulationTitItem {{_num==4?'active':''}}" data-num="4" bindtap="menuClick"><text>四号拍品</text>贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view>
         </view>
-    </view>
+    </view> -->
 
     <!-- <view class="title">贵阳市云岩区渔安安井未来方舟G1-22,23栋(22)1单元2层3号及4号住宅</view> -->
     <view class="price clearfix">
@@ -69,6 +69,15 @@
         <text>499次围观</text>
         <text>258人模拟</text>
         <text>我的拍卖编号：002</text>
+        <view class="recordTitl">
+            <text>我的竞拍记录</text>
+        </view>
+        <view class="recordConItem">
+            <text>淘汰</text>
+            <text>T1254</text>
+            <text>78,000</text>
+            <text>2021-03-25 15:02:38</text>
+        </view>
     </view>
 </view>
 
@@ -76,8 +85,11 @@
 <!-- 内容区域 -->
 <view class="simulationContent">
     <!-- 竞买记录 -->
-    <!-- <view class="record">
-        <view class="recordTit">竞买记录(3)</view>
+   <view class="record">
+        <view class="recordTit">
+            <text>竞买记录(3)</text>
+            <navigator>更多</navigator>
+        </view>
         <view class="recordContent">
           <view class="recordCon">
               <view class="li active">
@@ -97,10 +109,10 @@
               </view>
           </view>
         </view>
-    </view> -->
+    </view>
 
     <!-- 出价窗口 -->
-    <view class="offer">
+    <!-- <view class="offer">
         <block wx:for="{{offerArray}}">
             <view class="offerLi">
                 <image src="{{item.imgSrc}}" mode="aspectFill"></image>
@@ -113,7 +125,7 @@
             <text class="offerCon">已出价:125,6360元</text>
             <image src="/images/header.jpg" mode="aspectFill"></image>
         </view>
-    </view>
+    </view> -->
 
 
 

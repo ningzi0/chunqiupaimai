@@ -62,7 +62,7 @@
   padding: 0.5em;
 }
 .inputp input{
-  margin-top: 0;
+  margin-top: 0.5em;
   width: 96%;
 }
 .inputp text{
@@ -71,7 +71,7 @@
 .inputp button{
   display: inline-block;
   width: 50% !important;
-  margin: 0.5em 0.5em 0;
+  margin: 0 0.5em 0;
   border: 1px solid #eee;
 }
 

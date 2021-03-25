@@ -29,6 +29,8 @@
     "pages/voucher/voucher",
     "pages/distinguishinput/distinguishinput",
     "pages/weixin/weixin",
+    "pages/record/record",
+    "pages/hall/hall",
     "pages/dateTimePicker/dateTimePicker",
     "pages/toggleClass/toggleClass",
     "pages/logs/logs"

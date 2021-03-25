@@ -285,6 +285,20 @@
           "pathName": "pages/weixin/weixin",
           "query": "",
           "scene": 1047
+        },
+        {
+          "id": -1,
+          "name": "竞买记录",
+          "pathName": "pages/record/record",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "拍卖会大厅",
+          "pathName": "pages/hall/hall",
+          "query": "",
+          "scene": null
         }
       ]
     }
