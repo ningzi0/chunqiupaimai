@@ -49,6 +49,6 @@
 }
 
 .assetsContent ul li navigator{
-  margin: 0;
+  margin: 0.5em 0;
   padding: 0;
 }

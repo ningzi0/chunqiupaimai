@@ -30,6 +30,7 @@
             <li>
                 <navigator class="clearfix" url="/pages/simulation/simulation">
                     <view class="pic">
+                        <text class="{{item.textName}}">{{item.textText}}</text>
                         <image src="{{item.imgSrc}}" mode="aspectFill"></image>
                     </view>
                     <view class="assetsCon">

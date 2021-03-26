@@ -16,7 +16,9 @@ Page({
       text1:'910',
       text2:'0',
       tags:'正在进行中',
-      tagsClass:'tags1'
+      tagsClass:'tags1',
+      textName:'online',
+      textText:'线上拍'
     },{
       imgSrc:'/images/house2.jpg',
       assetTit:'中南菩悦春山居国风别墅 118平实得面积300平送花园80平',
@@ -25,7 +27,9 @@ Page({
       text1:'910',
       text2:'0',
       tags:'正在进行中',
-      tagsClass:'tags1'
+      tagsClass:'tags1',
+      textName:'tongbu',
+      textText:'同步拍'
     },{
       imgSrc:'/images/house2.jpg',
       assetTit:'中南菩悦春山居国风别墅 118平实得面积300平送花园80平',
@@ -34,7 +38,9 @@ Page({
       text1:'910',
       text2:'0',
       tags:'正在进行中',
-      tagsClass:'tags1'
+      tagsClass:'tags1',
+      textName:'online',
+      textText:'线上拍'
     },{
       imgSrc:'/images/house2.jpg',
       assetTit:'中南菩悦春山居国风别墅 118平实得面积300平送花园80平',
@@ -43,7 +49,9 @@ Page({
       text1:'910',
       text2:'0',
       tags:'正在进行中',
-      tagsClass:'tags1'
+      tagsClass:'tags1',
+      textName:'online',
+      textText:'线上拍'
     }]
   },
 

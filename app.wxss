@@ -386,7 +386,24 @@ page{
   width: 10em;
   height: 10em;
   float: left;
+  position: relative;
 }
+.assetsContent ul li .pic text{
+  position: absolute;
+  font-size: 0.85em;
+  top: 0;
+  left: 0;
+  padding: 0.3em 0.5em;
+  color: #fff;
+}
+.tongbu{
+  background-color: #fda500;
+}
+.online{
+  background-color: #0e8d1a;
+}
+
+
 .assetsContent ul li .assetsCon{
   float: left;
   width: 49%;
