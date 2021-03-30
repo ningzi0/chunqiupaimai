@@ -299,6 +299,13 @@
           "pathName": "pages/hall/hall",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "拍卖会",
+          "pathName": "pages/paimaihui/paimaihui",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -1,0 +1,32 @@
+<view class="paimaihui">
+    <block wx:for="{{paimaihuiArray}}">
+        <view class="pmh_item">
+          <view class="halltop">
+              <view class="pic">
+                <text class="{{item.textName}} label">{{item.textText}}</text>
+                  <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                  <view class="hallpicText">
+                    <text class="{{item.tagsClass}} text">{{item.tags}}</text>
+                    <view class="day_time">
+                      <text>{{qgdjs_jo.day}}</text>
+                      <text>天</text>
+                      <text>{{qgdjs_jo.hour}}</text>
+                      <text>时</text>
+                      <text>{{qgdjs_jo.min}}</text>
+                      <text>分</text>
+                      <text>{{qgdjs_jo.sec}}</text>
+                      <text>秒</text>
+                    </view>
+                  </view>
+              </view>
+          </view>
+          <view class="hallTitle">{{item.assetTit}}</view>
+          <view class="paimaihuiLabel">
+              <text>1个标的</text> | 
+              <text>4254次围观</text>
+          </view>
+        </view>
+      </block>
+</view>
+
+

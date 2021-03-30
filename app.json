@@ -31,6 +31,7 @@
     "pages/weixin/weixin",
     "pages/record/record",
     "pages/hall/hall",
+    "pages/paimaihui/paimaihui",
     "pages/dateTimePicker/dateTimePicker",
     "pages/toggleClass/toggleClass",
     "pages/logs/logs"

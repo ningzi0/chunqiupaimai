@@ -4,7 +4,7 @@
       <view class="pic">
           <image src="/images/house.jpg" mode="aspectFill"></image>
           <view class="hallpicText">
-            <text class="soon">即将开始</text>
+            <text class="soon text">即将开始</text>
             <view class="day_time">
               <text>{{qgdjs_jo.day}}</text>
               <text>天</text>
