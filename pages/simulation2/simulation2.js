@@ -5,8 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    jssj:"2021-05-26 23:59:59",
+    timer:"",
+    qgdjs_jo:{ day:"00", hour:"00", min:"00", sec:"00" },
     BgColor: '#ff7315',
     shoucang:"收藏",
+    showMore: false,
     movies:[  
       {url:'/images/house.jpg'} ,  
       {url:'/images/house.jpg'} ,  
@@ -39,6 +43,11 @@ Page({
       dateTime:'2020/12/01 12:21:28'
     }]
   },
+  listToggle: function () {
+    this.setData({
+      showMore: !this.data.showMore
+    })
+  },
   shoucang: function(){
     var bgColor = this.data.BgColor == '#999999' ? '#999999' : '#999999';
     // 设置背景颜色数据
@@ -52,7 +61,37 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    that.countDown();
+  },
+  countDown: function(){
+    let that = this;
 
+    that.setData({
+      timer: setInterval(function(){
+        var lefttime = parseInt((new Date(that.data.jssj.replace(/-/g, "/")).getTime()-new Date().getTime()));
+        if(lefttime<=0){
+          that.setData({
+            qgdjs_jo: { day: "00" ,hour: "00", min: "00", sec: "00"}
+          })
+          clearInterval(that.data.timer);
+          return
+        }
+        var d = parseInt(lefttime / 1000 / 3600 / 24);
+        var h = parseInt(lefttime / 1000 / 3600 % 24);
+        var m = parseInt(lefttime / 1000 / 60 % 60);
+        var s = parseInt(lefttime / 1000 % 60);
+
+        d < 10 ? d = "0" + d : d;
+        h < 10 ? h = "0" + h : h;
+        m < 10 ? m = "0" + m : m;
+        s < 10 ? s = "0" + s : s;
+
+        that.setData({
+          qgdjs_jo: {day: d, hour: h, min: m, sec: s }
+        })
+      },1000)
+    })
   },
 
   /**

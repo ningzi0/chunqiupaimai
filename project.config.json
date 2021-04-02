@@ -306,6 +306,13 @@
           "pathName": "pages/paimaihui/paimaihui",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "拍卖报名",
+          "pathName": "pages/signup/signup",
+          "query": "",
+          "scene": null
         }
       ]
     }

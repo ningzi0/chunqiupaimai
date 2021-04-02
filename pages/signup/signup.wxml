@@ -1,0 +1,154 @@
+
+<view class="steps_box">
+  <progress percent="{{Steps*percent}}"  class="progress" stroke-width="3" color="rgb(25, 185, 3)" backgroundColor="rgb(185, 187, 190)" style="width:{{progress}}%"/>
+  <view class="steps_all">
+    <view class="steps_one_box" wx:for="{{StepsList}}" wx:key="index">
+      <view class='{{Steps==index?"steps":Steps<index?"steps3":"steps2"}}'>
+        <image wx:if="{{Steps==index}}" src="/images/icon/suc.png" class="steps_img"></image>
+      </view>
+      <view class="{{Steps>=index?'steps_wenzi':'steps_wenzi2'}}" >{{StepsList[index]}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="signupCon">
+  <!-- 第一步 实名信息 -->
+  <view class="signupItem" hidden="{{hidden}}">
+      <view class="tips">
+        <text class="i">i</text>请务必提供本人真实有效的身份证，便于后续竞拍车辆及退还保证金操作；如果信息虚假或错误，产生纠纷，由个人负责
+      </view>
+
+      <view class="phone">
+        <text class="p_t">手机号码：</text>
+        <text>15599108081</text>
+      </view>
+
+      <view class="firststep">
+        <view class="firststep_t">身份证照片</view>
+        <view class="idCardFlex">
+          <view class="idcardItem">
+            <view class="pic">
+              <text class="Examples">示例</text>
+              <image src="/images/id.png" mode="aspectFill"></image>
+            </view>
+            <view class="photograph" bindtap='img_w_show'>
+              <image src="/images/icon/camera.png" mode="aspectFill"></image>
+              <text>拍照上传</text>
+            </view>
+          </view>
+          <view class="idcardItem">
+            <view class="pic">
+              <text class="Examples">示例</text>
+              <image src="/images/id-2.png" mode="aspectFill"></image>
+            </view>
+            <view class="photograph" bindtap='img_w_show'>
+              <image src="/images/icon/camera.png" mode="aspectFill"></image>
+              <text>拍照上传</text>
+            </view>
+          </view>
+        </view>
+        
+        <view class="inputText">
+            <view class="label">
+                <text>拍卖编号</text>
+                <input type="text" placeholder="NH001"/>
+            </view>
+            <view class="label">
+                <text>姓名</text>
+                <input type="text" placeholder="上传身份证自动识别"/>
+            </view>
+            <view class="label">
+                <text>地址</text>
+                <input type="text" placeholder="上传身份证自动识别"/>
+            </view>
+            <view class="label">
+                <text>身份证号码</text>
+                <input type="text" placeholder="上传身份证自动识别"/>
+            </view>
+            <view class="label" hidden="{{tablehidden}}">
+                <text>企业名称</text>
+                <input type="text" placeholder="上传营业执照自动识别"/>
+            </view>
+            <view class="label">
+                <text>保证金</text>
+                <input type="text" placeholder="50000元"/>
+            </view>
+            <view class="label">
+                <text>打款账号</text>
+                <input type="text" placeholder="工行123456789122546"/>
+            </view>
+            <view class="read">
+                <navigator url="/pages/helpshow/helpshow">阅读拍卖明细</navigator>
+            </view>
+        </view>
+        <view class="submit" bindtap="steps1">签署协议并提交</view>
+      </view>
+  </view>
+
+  <!-- 第二步 支付保证金 -->
+  <view class="signupItem"  hidden="{{hidden2}}">
+    <view class="payment">
+      <view class="pary_t">
+        <view class="p_t">
+          <image src="/images/icon/bond.png" mode="aspectFill"></image>
+          <view class="p_tt">
+            <text>支付拍卖保证金</text>
+            <text>保证金可退</text>
+          </view>
+        </view>
+        <view class="pay_tips">拍卖认证商户需缴纳保证金方可参与拍卖，如需退还保证金或咨询详细信息，请拨打400-821-8889</view>
+      </view>
+    </view>
+
+    <!-- 保证金额 -->
+    <view class="payment_money">
+      <view class="p_m_t">保证金额</view>
+      <view class="location_bottom" hidden="" >
+        <view class="{{_num == 1?'add_citying':'add_city'}}" data-num = "1" bindtap="clickNum">￥10000.00</view>
+        <view class="{{_num == 2?'add_citying':'add_city'}}" data-num = "2"  bindtap="clickNum">￥8000.00</view>
+        <view class="{{_num == 3?'add_citying':'add_city'}}" data-num = "3" bindtap="clickNum">￥6000.00</view>
+        <view class="{{_num == 4?'add_citying':'add_city'}}" data-num = "4"  bindtap="clickNum">￥4000.00</view>
+        <view class="{{_num == 5?'add_citying':'add_city'}}" data-num = "5"  bindtap="clickNum">￥2000.00</view>
+      </view>
+      <view class="paybtn" bindtap="steps2">立即支付</view>
+      <view class="careful">
+        <text>注意事项：</text>
+        <text>1.缴纳10000元保证金可参拍任意场次拍卖会</text>
+        <text>2.缴纳不足10000元随金额递减参拍资格有一定条件限制</text>
+      </view>
+    </view>
+
+
+
+  </view>
+  <!-- 第三步 认证成功 -->
+  <view class="signupItem" hidden="{{hidden3}}">
+    <view class="authentication">
+      <view class="pic">
+        <image src="/images/icon/success.png" mode="aspectFill"></image>
+      </view>
+      <view class="signupText">恭喜您，认证成功！</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

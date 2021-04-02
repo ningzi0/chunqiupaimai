@@ -60,6 +60,46 @@
   text-align: center;
   border: 1px solid #eee;
   padding: 0.5em;
+  display: flex;
+}
+.inputp_flex{
+  flex: 1;
+  padding:0 0.5em;
+}
+.inputp_flex .text{
+  font-size: 0.9em;
+  text-align: left;
+  margin: 0.3em 0;
+}
+.current text:last-child {
+  color: #d90f09;
+}
+.inputpWrap .open{
+  font-size: 0.9em;
+  padding: 0.3em 0.75em;
+  margin-bottom: 0.5em;
+  background: #d90f09;
+  color: #fff;
+  display: inline-block;
+}
+.hiddenmore{
+  display: none;
+}
+.inputpWrap .time{
+  font-size: 0.9em;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  margin-bottom: 0.5em;
+}
+.inputpWrap .time text:nth-child(even){
+  color: #d90f09;
+}
+.inputp_flex .text text{
+  display: inline-block;
+  width: 5em;
+}
+.inputp_flex:first-child{
+  border-right: 1px solid #eee;
 }
 .inputp input{
   margin-top: 0.5em;

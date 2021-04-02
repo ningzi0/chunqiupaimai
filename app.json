@@ -32,6 +32,7 @@
     "pages/record/record",
     "pages/hall/hall",
     "pages/paimaihui/paimaihui",
+    "pages/signup/signup",
     "pages/dateTimePicker/dateTimePicker",
     "pages/toggleClass/toggleClass",
     "pages/logs/logs"

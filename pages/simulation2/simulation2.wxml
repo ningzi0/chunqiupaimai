@@ -67,12 +67,39 @@
             <slider min="1000" max="10000" show-value step="1000"/>
         </view> -->
 
-        <view class="inputp">
-            <text>最低出价:1000元</text>
-            <input type="number" placeholder="单次出价需是1000的倍数"/>
-            <button>+</button>
-            <button>-</button>
-            <text>单位：元</text>
+        <view class="inputpWrap">
+            <view class="open" wx:if="{{showMore}}"  bindtap='listToggle'>收起↓↓↓</view>
+            <view class="open" wx:else  bindtap='listToggle'>展开↑↑↑</view>
+            <view class="time">
+                <view class="day_time">
+                    <text>距离结束：</text>
+                    <text>{{qgdjs_jo.day}}</text>
+                    <text>天</text>
+                    <text>{{qgdjs_jo.hour}}</text>
+                    <text>时</text>
+                    <text>{{qgdjs_jo.min}}</text>
+                    <text>分</text>
+                    <text>{{qgdjs_jo.sec}}</text>
+                    <text>秒</text>
+                </view>
+            </view>
+            <view class="inputp {{!showMore? 'hiddenmore' : 'showmore'}}">
+                <view class="inputp_flex">
+                    <view class="text"><text>您的出价</text> <text>--</text> 元</view>
+                    <view class="text current"><text>当前出价</text> <text>46000</text> 元</view>
+                    <view class="text"><text>交易佣金</text> <text>920</text> 元</view>
+                    <view class="text"><text>办证费</text> <text>0</text> 元</view>
+                    <view class="text"><text>出库费</text> <text>200</text> 元</view>
+                </view>
+                <view class="inputp_flex">
+                    <text>最低出价:1000元</text>
+                    <input type="number" placeholder="单次出价需是1000的倍数"/>
+                    <button>+</button>
+                    <button>-</button>
+                    <text>单位：元</text>
+                </view>
+            </view>
+
         </view>
         <view class="btn">
             <view class="inputbtn">出价</view>
