@@ -4,6 +4,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    dates: [
+      { "data_name": "企业拍卖"},
+      { "data_name": "个人拍卖"},
+    ],
+    
+    state:0,
     _num: 5, 
     hidden:false,
     hidden2:true,
@@ -22,6 +28,15 @@ Page({
   // //步骤为三步时
   //   progress: 67,
   //   percent: 50,
+  },
+  //选择table后加样式
+  select_date: function (e) {
+    let currentTabIndex = e.currentTarget.dataset.key;
+    console.log(currentTabIndex)
+    let show =[false,true];
+    this.setData({
+      state: e.currentTarget.dataset.key, tablehidden:show[currentTabIndex]
+    });
   },
   steps1:function(){
     this.setData({

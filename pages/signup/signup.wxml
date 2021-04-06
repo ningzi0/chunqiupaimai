@@ -1,4 +1,11 @@
 
+<view class="distTitle">
+      <view class="distTitem {{state==index?'active-tag':''}}" wx:for-index="index" catchtap="select_date"  wx:for="{{dates}}" data-key='{{index}}'>{{item.data_name}}</view>
+</view>
+
+
+
+
 <view class="steps_box">
   <progress percent="{{Steps*percent}}"  class="progress" stroke-width="3" color="rgb(25, 185, 3)" backgroundColor="rgb(185, 187, 190)" style="width:{{progress}}%"/>
   <view class="steps_all">
@@ -25,29 +32,51 @@
       </view>
 
       <view class="firststep">
-        <view class="firststep_t">身份证照片</view>
-        <view class="idCardFlex">
-          <view class="idcardItem">
-            <view class="pic">
-              <text class="Examples">示例</text>
-              <image src="/images/id.png" mode="aspectFill"></image>
+        <view class="id-wrap">
+            <view class="firststep_t">身份证照片</view>
+            <view class="idCardFlex">
+              <view class="idcardItem">
+                <view class="pic">
+                  <text class="Examples">示例</text>
+                  <image src="/images/id.png" mode="aspectFill"></image>
+                </view>
+                <view class="photograph" bindtap='img_w_show'>
+                  <image src="/images/icon/camera.png" mode="aspectFill"></image>
+                  <text>拍照上传</text>
+                </view>
+              </view>
+              <view class="idcardItem">
+                <view class="pic">
+                  <text class="Examples">示例</text>
+                  <image src="/images/id-2.png" mode="aspectFill"></image>
+                </view>
+                <view class="photograph" bindtap='img_w_show'>
+                  <image src="/images/icon/camera.png" mode="aspectFill"></image>
+                  <text>拍照上传</text>
+                </view>
+              </view>
             </view>
-            <view class="photograph" bindtap='img_w_show'>
-              <image src="/images/icon/camera.png" mode="aspectFill"></image>
-              <text>拍照上传</text>
-            </view>
-          </view>
-          <view class="idcardItem">
-            <view class="pic">
-              <text class="Examples">示例</text>
-              <image src="/images/id-2.png" mode="aspectFill"></image>
-            </view>
-            <view class="photograph" bindtap='img_w_show'>
-              <image src="/images/icon/camera.png" mode="aspectFill"></image>
-              <text>拍照上传</text>
-            </view>
-          </view>
         </view>
+        <view class="id-wrap" hidden="{{tablehidden}}">
+            <view class="firststep_t">营业执照</view>
+            <view class="idCardFlex">
+              <view class="idcardItem id3">
+                <view class="pic">
+                  <text class="Examples">示例</text>
+                  <image src="/images/id-3.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="photograph" bindtap='img_w_show'>
+                  <image src="/images/icon/camera.png" mode="aspectFill"></image>
+                  <text>拍照上传</text>
+                </view>
+              </view>
+              <view class="idcardItem">
+                
+              </view>
+            </view>
+        </view>
+
+        
         
         <view class="inputText">
             <view class="label">

@@ -2,7 +2,21 @@
 page {
   background-color: #fff;
 }
-
+.distTitle{
+  display: flex;
+}
+.distTitem{
+  flex: 1;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0.5em;
+  background-color: #eee;
+  margin: 0.3em;
+}
+.active-tag{
+  background-color: #eb0347;
+  color: #fff;
+}
 .steps_box {
   margin-top: 200rpx;
   margin: auto;
@@ -140,6 +154,10 @@ page {
   border: 1px solid #eee;
   border-radius: 0.3em;
 }
+.id3 .pic image{
+  height: 19em;
+}
+.firststep_t{margin: 0.5em 0;}
 
 .Examples {
   position: absolute;
